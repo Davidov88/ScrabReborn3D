@@ -29,6 +29,7 @@ var body_names={}
 var workshop_candidate=""
 var workshop_undo: Array=[]
 var vision_filter: ColorRect
+var scan_nodes={}
 
 const TEXT=Color("c6cec9")
 const MUTED=Color("73858b")
@@ -64,7 +65,14 @@ func setup(g: Node3D):
 	reticle=Control.new();reticle.set_anchors_and_offsets_preset(Control.PRESET_CENTER);reticle.mouse_filter=Control.MOUSE_FILTER_IGNORE;hud.add_child(reticle)
 	for rect in [Rect2(-10,-1,5,2),Rect2(5,-1,5,2),Rect2(-1,-10,2,5),Rect2(-1,5,2,5)]:
 		var line=ColorRect.new();line.position=rect.position;line.size=rect.size;line.color=ACCENT;line.mouse_filter=Control.MOUSE_FILTER_IGNORE;reticle.add_child(line)
-	settings={"sensitivity":.0028,"shake":true,"volume":.65,"music":.25,"ambience":.35,"ui_volume":.5,"quality":1,"ui_scale":1.0}
+	settings={"sensitivity":.0028,"shake":true,"volume":.65,"movement":.65,"music":.25,"ambience":.35,"ui_volume":.5,"quality":1,"ui_scale":1.0}
+	get_viewport().size_changed.connect(resize_interface)
+
+func resize_interface():
+	var factor=float(settings.get("ui_scale",1.0))
+	scale=Vector2.ONE*factor
+	root.set_anchors_preset(Control.PRESET_TOP_LEFT)
+	root.size=get_viewport().get_visible_rect().size/factor
 
 func label(text: String,size: int=18,color: Color=TEXT) -> Label:
 	var l=Label.new();l.text=text;l.add_theme_font_size_override("font_size",size);l.add_theme_color_override("font_color",color);return l
@@ -94,7 +102,7 @@ func update_hud():
 		var color=Color("8daf9c") if ratio>.7 else Color("c59f60") if ratio>=.15 else Color("d06a54")
 		body_bars[slot].add_theme_stylebox_override("fill",style(color,color,0))
 		body_names[slot].modulate=color
-	top_title.text="SCRAP / REBORN    %02d" % (game.sector+1)
+	top_title.text="LOW GRID / L.R.-01    %02d" % (game.sector+1)
 	stats_label.text="МАССА %.0f / %.0f кг     CPU %.0f / %.0f     ЛОМ %d     %s" % [s.mass,s.safe_load,s.cpu_load,s.cpu_cap,int(r.credits),["ТРЕТЬЕ ЛИЦО","ВИД СВЕРХУ","ПЕРВОЕ ЛИЦО"][game.camera_mode]]
 	var sec=ScrapCampaign.SECTORS[game.sector]
 	var done=game.completed_objectives()
@@ -110,7 +118,7 @@ func update_hud():
 	weapon_label.text="   /   ".join(parts)+"     |     "+ScrapSimulation.MODE_NAMES[game.attack_mode]
 	bar_energy.max_value=s.energy_cap;bar_energy.value=r.energy;bar_heat.max_value=110;bar_heat.value=r.heat
 	var near=game.world.near(game.player.global_position) if game.world!=null else {}
-	context_label.text="[E] "+near.title if not near.is_empty() else ""
+	context_label.text="["+game.action_key("interact")+"] "+near.title if not near.is_empty() else ""
 	if near.is_empty():
 		for enemy in game.enemies:
 			if is_instance_valid(enemy) and not enemy.state.alive and enemy.position.distance_to(game.player.position)<2.8:context_label.text="[E] ДЕМОНТИРОВАТЬ / "+enemy.enemy_name;break
@@ -128,6 +136,36 @@ func update_hud():
 	else:target_label.text="УЗЛЫ: сенсор / руки / корпус / шасси     Нажмите F для диагностики"
 	reticle.visible=not game.top_view and not modal_open and not game.menu_open
 	hud.visible=not game.menu_open
+	update_node_scan()
+
+func update_node_scan():
+	var actor=game.target_actor
+	var show=actor!=null and is_instance_valid(actor) and float(actor.state.scan_until)>float(actor.state.time) and not modal_open and not game.menu_open and game.player.line_of_sight(actor)
+	for node in scan_nodes.values():node.visible=false
+	if not show:return
+	var zones=["sensor","left_arm","right_arm","torso","legs"]
+	if actor.state.assembly.has("torso") and actor.state.assembly.torso.durability<=actor.state.assembly.torso.max_durability*.4:zones.append_array(["cpu","power_core","cooling"])
+	for zone in zones:
+		if not actor.state.assembly.has(zone) or not actor.hitboxes.has(zone):continue
+		var key=zone
+		if not scan_nodes.has(key):
+			var button=Button.new();button.add_theme_font_size_override("font_size",12);button.add_theme_stylebox_override("normal",style(Color(.03,.055,.065,.94)));hud.add_child(button);scan_nodes[key]=button
+			button.pressed.connect(func():game.target_zone=key;game.aim_lock=true)
+		var point=actor.hitboxes[key].global_position
+		if game.camera.is_position_behind(point):continue
+		var part=actor.state.assembly[key];var node=scan_nodes[key]
+		var offset=Vector2(-170,0) if key in ["left_arm","torso"] else Vector2(30,0)
+		if key=="sensor":offset=Vector2(-70,-40)
+		node.position=game.camera.unproject_position(point)/float(settings.ui_scale)+offset
+		node.text=ScrapCatalog.zone_label(key)+"  %.0f%%" % (100*float(part.durability)/maxf(1,float(part.max_durability)))
+		node.tooltip_text=game.catalog.label(part.id)+"\n"+game.catalog.summary(game.sim.definition(part))
+		node.modulate=ACCENT if game.target_zone==key else Color("a4b9b5");node.visible=true
+
+func pointer_on_scanner() -> bool:
+	if Input.mouse_mode==Input.MOUSE_MODE_CAPTURED:return false
+	for node in scan_nodes.values():
+		if node.visible and node.is_hovered():return true
+	return false
 
 func close(preserve_workshop: bool=false,keep_mouse_visible: bool=false):
 	if overlay!=null:overlay.queue_free();overlay=null
@@ -139,7 +177,7 @@ func open_panel(title: String,subtitle: String="",kind: String=""):
 	close(kind=="workshop",true);modal_open=true;modal_kind=kind
 	Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
 	overlay=ColorRect.new();overlay.color=Color(0.015,.025,.03,.88);overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);root.add_child(overlay)
-	panel=PanelContainer.new();panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);panel.offset_left=95;panel.offset_right=-95;panel.offset_top=48;panel.offset_bottom=-48;panel.add_theme_stylebox_override("panel",style(Color("101c22"),Color("52636a")));overlay.add_child(panel)
+	panel=PanelContainer.new();panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);panel.offset_left=24;panel.offset_right=-24;panel.offset_top=28;panel.offset_bottom=-28;panel.add_theme_stylebox_override("panel",style(Color("101c22"),Color("52636a")));overlay.add_child(panel)
 	var outer=VBoxContainer.new();outer.add_theme_constant_override("separation",12);panel.add_child(outer)
 	var heading=HBoxContainer.new();outer.add_child(heading);heading.add_child(label(title,28,ACCENT));var space=Control.new();space.size_flags_horizontal=Control.SIZE_EXPAND_FILL;heading.add_child(space)
 	if kind!="menu":button("ЗАКРЫТЬ / ESC",close,heading)
@@ -148,8 +186,9 @@ func open_panel(title: String,subtitle: String="",kind: String=""):
 	content=VBoxContainer.new();content.size_flags_horizontal=Control.SIZE_EXPAND_FILL;content.add_theme_constant_override("separation",8);scroll.add_child(content)
 
 func menu():
+	if not game.replay_restore.is_empty():game.end_replay();return
 	game.menu_open=true
-	open_panel("SCRAP REBORN","ГЛАВА 01  /  АППАРАТНОЕ ПОДТВЕРЖДЕНИЕ", "menu")
+	open_panel("LOW GRID: ОШИБКА 63","ТЕЛО СТАЛО УСТРОЙСТВОМ. СОЗНАНИЕ — ТОВАРОМ.", "menu")
 	var columns=HBoxContainer.new();columns.add_theme_constant_override("separation",48);content.add_child(columns)
 	var navigation=VBoxContainer.new();navigation.custom_minimum_size.x=460;navigation.size_flags_horizontal=Control.SIZE_EXPAND_FILL;navigation.add_theme_constant_override("separation",12);columns.add_child(navigation)
 	navigation.add_child(label("СОЗНАНИЕ\nВ МАШИНЕ",48,TEXT))
@@ -160,6 +199,7 @@ func menu():
 	button("04    КОНФИГУРАЦИЯ",settings_panel,navigation)
 	button("05    АРХИВ / УПРАВЛЕНИЕ",journal,navigation)
 	button("06    АВТОРЫ / ИСТОЧНИКИ",credits,navigation)
+	button("ПОВТОРИТЬ ПРОЛОГ",game.replay_prologue,navigation)
 	button("ВЫХОД",func():game.get_tree().quit(),navigation)
 	var showcase=VBoxContainer.new();showcase.size_flags_horizontal=Control.SIZE_EXPAND_FILL;columns.add_child(showcase)
 	showcase.add_child(label("B-01 / ГРАЖДАНСКИЙ КАРКАС",18,ACCENT))
@@ -318,23 +358,41 @@ func scan(actor: ScrapActor):
 	if game.sim.active(game.player.state,"SIGNAL_TRACE"):content.add_child(label("СЕТЬ: "+("КАНАЛ ТРЕВОГИ" if actor.state.archetype=="E05" else "ЛОКАЛЬНОЕ УПРАВЛЕНИЕ"),18,ACCENT))
 
 func salvage(actor: ScrapActor):
-	open_panel("ДЕМОНТАЖ / "+actor.enemy_name,"Сохраняются реальные экземпляры. Указанная потеря прочности применяется без случайного броска.","salvage")
+	open_panel("ДЕМОНТАЖ / "+actor.enemy_name,"Сначала снимите уцелевшие узлы. Установить и отремонтировать их можно у верстака.","salvage")
 	inspect_actor=actor
+	var available=0
 	for zone in actor.state.assembly:
 		var z=zone;var p=actor.state.assembly[z]
-		content.add_child(label(ScrapCatalog.zone_label(z)+"  /  "+game.catalog.label(p.id)+"  %.0f / %.0f  %s" % [p.durability,p.max_durability,game.sim.state_name(p)],18,ACCENT))
 		if p.destroyed:continue
-		var row=HBoxContainer.new();content.add_child(row)
+		available+=1
+		var definition=game.sim.definition(p)
+		var card=PanelContainer.new();card.add_theme_stylebox_override("panel",style(Color("15262c")));content.add_child(card)
+		var layout=HBoxContainer.new();layout.add_theme_constant_override("separation",18);card.add_child(layout)
+		var picture=game.catalog.reference_texture(definition)
+		if picture!=null:
+			var image=TextureRect.new();image.texture=picture;image.custom_minimum_size=Vector2(115,145);image.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;image.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;layout.add_child(image)
+		var details=VBoxContainer.new();details.size_flags_horizontal=Control.SIZE_EXPAND_FILL;layout.add_child(details)
+		details.add_child(label(ScrapCatalog.zone_label(z)+" / "+game.catalog.label(p.id),20,ACCENT))
+		details.add_child(label("СОСТОЯНИЕ: %.0f / %.0f · %s     КРЕПЛЕНИЕ: %s" % [p.durability,p.max_durability,game.sim.state_name(p),ScrapCatalog.zone_label(z)],15))
+		var description=label(game.catalog.summary(definition),16,MUTED);description.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;details.add_child(description)
+		var current=game.sim.slot_def(game.player.state,z);var changes=[]
+		for metric in game.catalog.metrics(definition).slice(0,4):
+			changes.append("%s: %.0f → %.0f" % [ScrapCatalog.metric_label(metric[0]),float(current.get(metric[0],0)),float(metric[1])])
+		var comparison=label("ПРИ ЗАМЕНЕ: "+"   ·   ".join(changes),15,Color("92bbaa"));comparison.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;details.add_child(comparison)
+		var row=HBoxContainer.new();details.add_child(row)
 		for method in ScrapSimulation.DISMANTLE:
 			var m=method;var values=ScrapSimulation.DISMANTLE[m]
 			var loss=ceilf(p.max_durability*game.sim.extraction_loss(game.player.state,m));var seconds=3.0*values[0]*float(game.sim.definition(p).get("dismantle_difficulty",1))
-			button({"careful":"Аккуратный","fast":"Быстрый","force":"Силовой","surgical":"Хирургический","emergency":"Аварийный"}[m]+"\n%.1f c  −%.0f" % [seconds,loss],func():game.begin_salvage(actor,z,m,seconds),row)
+			var b=button({"careful":"СНЯТЬ БЕРЕЖНО","fast":"БЫСТРО","force":"СИЛОЙ","surgical":"ИНСТРУМЕНТОМ","emergency":"АВАРИЙНО"}[m]+"\n%.1f c · −%.0f прочн." % [seconds,loss],func():game.begin_salvage(actor,z,m,seconds),row)
+			b.add_theme_font_size_override("font_size",12)
+			if m=="surgical" and not game.sim.has_tool(game.player.state):b.disabled=true;b.tooltip_text="Нужен ремонтный манипулятор"
+	if available==0:content.add_child(label("Все уцелевшие узлы уже сняты. Этот корпус больше не содержит пригодных деталей.",22,MUTED))
 
 func settings_panel():
 	open_panel("НАСТРОЙКИ","Настройки сохраняются локально на D", "settings")
-	for property in ["volume","music","ambience","ui_volume","sensitivity","ui_scale"]:
+	for property in ["volume","movement","music","ambience","ui_volume","sensitivity","ui_scale"]:
 		var prop=property
-		content.add_child(label({"volume":"ЭФФЕКТЫ","music":"МУЗЫКА","ambience":"ОКРУЖЕНИЕ","ui_volume":"ИНТЕРФЕЙС","sensitivity":"ЧУВСТВИТЕЛЬНОСТЬ МЫШИ","ui_scale":"МАСШТАБ ИНТЕРФЕЙСА"}[prop],16,MUTED))
+		content.add_child(label({"volume":"ОРУЖИЕ И ЭФФЕКТЫ","movement":"ШАГИ И СЕРВОПРИВОДЫ","music":"МУЗЫКА","ambience":"ОКРУЖЕНИЕ","ui_volume":"ИНТЕРФЕЙС","sensitivity":"ЧУВСТВИТЕЛЬНОСТЬ МЫШИ","ui_scale":"МАСШТАБ ИНТЕРФЕЙСА"}[prop],16,MUTED))
 		var slider=HSlider.new();slider.custom_minimum_size=Vector2(450,24);slider.min_value=.0008 if prop=="sensitivity" else .8 if prop=="ui_scale" else 0;slider.max_value=.006 if prop=="sensitivity" else 1.3 if prop=="ui_scale" else 1;slider.step=.0001 if prop=="sensitivity" else .05;slider.value=settings[prop];content.add_child(slider)
 		slider.value_changed.connect(func(value):settings[prop]=value;game.apply_settings())
 	button("ТРЯСКА КАМЕРЫ: "+("ВКЛ" if settings.shake else "ВЫКЛ"),func():settings.shake=not settings.shake;game.apply_settings();settings_panel())
@@ -354,5 +412,6 @@ func credits():
 	var registry=JSON.parse_string(FileAccess.get_file_as_string("res://third_party/asset-register.json"))
 	for entry in registry:
 		content.add_child(label(str(entry.author)+" / "+str(entry.id)+" / "+str(entry.license)+"\n"+str(entry.source),17,TEXT))
+	content.add_child(label("Einar Rig (CC-BY) Blender Foundation | studio.blender.org\nАдаптация: Стальной и механическая рука L.R.-01; игровые сетки, материалы и привязки изменены.",17,TEXT))
 	content.add_child(label("Детали андроидов — собственная модульная геометрия по предоставленным референсам.\nGodot Engine — MIT. Blender — средство подготовки исходных моделей.",17,MUTED))
 	button("НАЗАД",menu)

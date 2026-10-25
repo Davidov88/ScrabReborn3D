@@ -1,0 +1,4 @@
+Robotic mechanic step sounds by Lee Barkovich, submitted by Iwan Gabovitch (qubodup).
+https://opengameart.org/content/robotic-mechanic-step-sounds
+CC BY 3.0: https://creativecommons.org/licenses/by/3.0/
+Changes: edited, layered, level-matched and converted for positional robot movement audio.

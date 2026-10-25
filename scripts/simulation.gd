@@ -32,6 +32,7 @@ func robot(archetype: String = "E01") -> Dictionary:
 
 func starter() -> Dictionary:
 	var r = robot()
+	r["presentation"]="lr01"
 	r.programs = ["BATTERY_SAVER", "BLACKBOX_READER","LOW_LIGHT_VISION"]
 	r.hotbar = ["BLACKBOX_READER", "BATTERY_SAVER"]
 	r.ammo.SCRAP_ROUND = 36

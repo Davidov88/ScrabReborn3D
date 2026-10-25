@@ -44,13 +44,20 @@ var perf_frames=0
 var perf_seconds=0.0
 var performance=[]
 var automated_results=[]
+var story: LowGridStory
+var replay_restore: Dictionary={}
+
+func _exit_tree():
+	ScrapRobotVisual.model_cache.clear();ScrapRobotVisual.wear_cache.clear();ScrapRobotVisual.torso_mesh_cache.clear()
 
 func _ready():
 	setup_input()
 	catalog=ScrapCatalog.new();sim=ScrapSimulation.new(catalog)
+	story=LowGridStory.new();story.setup(self)
 	ui=ScrapUI.new();add_child(ui);ui.setup(self)
 	setup_environment()
 	load_settings()
+	ui.resize_interface()
 	player=create_actor(sim.starter(),Vector3(0,.05,1),true)
 	enter_sector(0,false)
 	if camera!=null:set_camera_mode(0)
@@ -63,6 +70,12 @@ func _ready():
 	else:ui.menu()
 	if "--regression" in args:
 		var runner=load("res://tests/export_regression.gd").new();add_child(runner);runner.call_deferred("run",self)
+	if "--lowgrid-test" in args:
+		var runner=load("res://tests/lowgrid_regression.gd").new();add_child(runner);runner.call_deferred("run",self)
+	if "--lowgrid-soak" in args:
+		var runner=load("res://tests/lowgrid_soak.gd").new();add_child(runner);runner.call_deferred("run",self)
+	if "--lowgrid-playthrough" in args:
+		var runner=load("res://tests/lowgrid_playthrough.gd").new();add_child(runner);runner.call_deferred("run",self)
 	print("SCRAP_REBORN_READY catalog=",catalog.parts.size()," external=",catalog.visuals.size()," weapons=",catalog.weapons.size()," programs=",catalog.programs.size())
 
 func setup_input():
@@ -73,8 +86,14 @@ func setup_input():
 	for pair in [["fire_right",MOUSE_BUTTON_LEFT],["fire_left",MOUSE_BUTTON_RIGHT],["aim",MOUSE_BUTTON_MIDDLE]]:
 		InputMap.add_action(pair[0]);var mouse=InputEventMouseButton.new();mouse.button_index=pair[1];InputMap.action_add_event(pair[0],mouse)
 
+func action_key(action: String) -> String:
+	for event in InputMap.action_get_events(action):
+		if event is InputEventKey:return OS.get_keycode_string(event.physical_keycode if event.physical_keycode!=0 else event.keycode)
+	return action
+
 func setup_environment():
 	var env=WorldEnvironment.new();var e=Environment.new();e.background_mode=Environment.BG_COLOR;e.background_color=Color("080d12");e.ambient_light_source=Environment.AMBIENT_SOURCE_COLOR;e.ambient_light_color=Color("63727e");e.ambient_light_energy=.045;e.tonemap_mode=Environment.TONE_MAPPER_FILMIC;env.environment=e;add_child(env)
+	e.glow_enabled=true;e.glow_intensity=.45;e.glow_bloom=.06
 
 func setup_camera():
 	camera_pivot=Node3D.new();add_child(camera_pivot)
@@ -84,12 +103,20 @@ func setup_camera():
 	camera_pivot.position=player.global_position+Vector3(0,1.4,0)
 
 func setup_audio():
+	for name in ["Movement","Weapons","Ambience","Interface","Music"]:
+		if AudioServer.get_bus_index(name)<0:AudioServer.add_bus();AudioServer.set_bus_name(AudioServer.bus_count-1,name)
 	if DisplayServer.get_name()=="headless":return
-	ambience=AudioStreamPlayer.new();add_child(ambience)
+	ambience=AudioStreamPlayer.new();ambience.bus="Ambience";add_child(ambience)
 	var path="res://assets/audio/spaceEngineLow_000.ogg"
 	if ResourceLoader.exists(path):
 		ambience.stream=load(path);ambience.finished.connect(func():ambience.play());ambience.volume_db=-24;ambience.play()
-	music=AudioStreamPlayer.new();add_child(music)
+	music=AudioStreamPlayer.new();music.bus="Music";add_child(music)
+	apply_audio_settings()
+
+func apply_audio_settings():
+	for pair in [["Movement","movement"],["Weapons","volume"],["Ambience","ambience"],["Interface","ui_volume"],["Music","music"]]:
+		var index=AudioServer.get_bus_index(pair[0])
+		if index>=0:AudioServer.set_bus_volume_db(index,linear_to_db(maxf(.001,float(ui.settings.get(pair[1],.65)))))
 
 func play_sound(kind: String,pos=null):
 	if DisplayServer.get_name()=="headless":return
@@ -99,13 +126,16 @@ func play_sound(kind: String,pos=null):
 	var volume=float(ui.settings.ui_volume if kind=="click" else ui.settings.volume)
 	if pos!=null:
 		var audio=AudioStreamPlayer3D.new();add_child(audio);audio.global_position=pos;audio.stream=load(path);audio.max_distance=35;audio.volume_db=linear_to_db(maxf(.001,volume)) - 7;audio.finished.connect(audio.queue_free);audio.play()
+		audio.bus="Interface" if kind=="click" else "Weapons";audio.volume_db=-7
 	else:
 		var audio=AudioStreamPlayer.new();add_child(audio);audio.stream=load(path);audio.volume_db=linear_to_db(maxf(.001,volume))-8;audio.finished.connect(audio.queue_free);audio.play()
+		audio.bus="Interface" if kind=="click" else "Weapons";audio.volume_db=-8
 
 func create_actor(state: Dictionary,pos: Vector3,is_player: bool=false) -> ScrapActor:
 	var a=ScrapActor.new();add_child(a);a.position=pos;a.patrol_origin=pos;a.setup(self,state,is_player);return a
 
 func new_game(test_ground: bool):
+	story.reset()
 	training=test_ground;menu_open=false;sector_records.clear();journal.clear();used_objects.clear();objectives.clear()
 	if player!=null:remove_child(player);player.queue_free()
 	player=create_actor(sim.starter(),Vector3(0,.05,1),true)
@@ -115,17 +145,19 @@ func new_game(test_ground: bool):
 		grant_catalog()
 		notice("Полигон: весь каталог доступен. E возле каталога создаёт новые цели.")
 	else:
-		ui.message("ВОССТАНОВЛЕНИЕ СОЗНАНИЯ",ScrapCampaign.SECTORS[0].intro+"\n\nWASD — движение. V — смена камеры. E — взаимодействие. F — сканирование. Tab — тактическое замедление.")
+		if not automation and "--regression" not in OS.get_cmdline_user_args():story.begin()
 	update_mouse()
 
 func snapshot_sector() -> Dictionary:
 	var actors=[]
 	for a in enemies:
 		if is_instance_valid(a):actors.append({"uuid":a.uuid,"state":a.state,"position":[a.position.x,a.position.y,a.position.z],"rotation":a.rotation.y,"patrol":[a.patrol_origin.x,a.patrol_origin.y,a.patrol_origin.z]})
-	return {"enemies":actors,"used":used_objects.duplicate(),"objectives":objectives.duplicate()}
+	var wreck_states={}
+	for body in world.wrecks:wreck_states[body.uuid]=body.state
+	return {"enemies":actors,"wrecks":wreck_states,"used":used_objects.duplicate(),"objectives":objectives.duplicate()}
 
 func enter_sector(index: int,preserve: bool=true):
-	if preserve and world!=null:sector_records[str(sector)]=snapshot_sector()
+	if preserve and world!=null:sector_records[record_key()]=snapshot_sector()
 	pending_actions.clear();active_enemies.clear()
 	sector=index;target_actor=null;target_zone="torso";aim_lock=false
 	for a in enemies:remove_child(a);a.queue_free()
@@ -133,21 +165,25 @@ func enter_sector(index: int,preserve: bool=true):
 	if world!=null:remove_child(world);world.queue_free()
 	world=ScrapWorld.new();add_child(world);world.build(self,index,training)
 	used_objects=[];objectives=[]
-	if sector_records.has(str(index)):
+	if story.location!="campaign":pass
+	elif sector_records.has(str(index)):
 		var record=sector_records[str(index)];used_objects=record.used;objectives=record.objectives
 		if index==0 and record.enemies.size()>1:record.enemies=record.enemies.slice(0,1)
 		for data in record.enemies:
 			var a=create_actor(data.state,Vector3(data.position[0],data.position[1],data.position[2]));a.uuid=data.uuid;a.rotation.y=data.rotation;a.patrol_origin=Vector3(data.patrol[0],data.patrol[1],data.patrol[2]);enemies.append(a)
 	else:
-		var roster=[["E01"]] if index==0 else ScrapCampaign.SECTORS[index].enemies
+		var roster=[["E01"]] if index==0 else [["E02"],["E05"],["E03"]] if index==1 else ScrapCampaign.SECTORS[index].enemies
 		for group in range(roster.size()):
 			for j in range(roster[group].size()):
 				var id=roster[group][j]
 				var a=create_actor(sim.robot(id),Vector3(-1.9+j*3.8,2.2 if id in ["E05","E06"] else .05,-16-group*30))
+				if index==1 and id=="E03" and not training:
+					a.state["intro_patrol"]=true;a.state.assembly.torso.durability=a.state.assembly.torso.max_durability*.38;a.state.assembly.right_arm.durability=a.state.assembly.right_arm.max_durability*.35;a.state.assembly.power_core.durability=a.state.assembly.power_core.max_durability*.65;a.enemy_name="ПОВРЕЖДЁННЫЙ ПОСТОВОЙ";a.refresh()
 				a.uuid="%d-%d-%d" % [index,group,j];enemies.append(a)
 	for item in world.interactions:
 		if item.id in used_objects:item.used=true;item.label.modulate=Color("435b58")
 	player.position=Vector3(0,.05,1);player.patrol_origin=player.position;player.velocity=Vector3.ZERO
+	if camera!=null and story.location!="prologue":camera.transform=Transform3D.IDENTITY
 	if camera_pivot!=null:camera_pivot.position=player.global_position+Vector3(0,1.4,0)
 	if not training and preserve:save_game()
 	print("SECTOR_LOADED ",index," enemies=",enemies.size())
@@ -161,6 +197,9 @@ func update_mouse():
 
 func _input(event):
 	if ui!=null and ui.rebind_action!="":return
+	if story!=null and story.prologue>=0 and not menu_open and not ui.modal_open:
+		if event.is_action_pressed("interact") and not event.is_echo():story.advance();return
+		if event is InputEventKey and event.pressed and not event.echo and event.physical_keycode==KEY_P:story.finish();return
 	if event is InputEventKey and event.pressed and not event.echo and event.keycode==KEY_ESCAPE:
 		if ui.modal_open:
 			if menu_open:ui.menu()
@@ -189,11 +228,7 @@ func _input(event):
 	if Input.is_action_just_pressed("mode"):
 		var modes=ScrapSimulation.MODES.keys();attack_mode=modes[(modes.find(attack_mode)+1)%modes.size()];notice(ScrapSimulation.MODE_NAMES[attack_mode])
 	if Input.is_action_just_pressed("reload"):
-		for hand in ["left_arm","right_arm"]:
-			var error=sim.reload(player.state,hand)
-			if error!="":notice(error)
-			player.reload_until[hand]=player.state.time+1.2
-		play_sound("click")
+		player.request_reload()
 	for i in range(4):
 		if Input.is_action_just_pressed("program_"+str(i+1)):start_program(i)
 	if event is InputEventKey and event.pressed:
@@ -209,7 +244,7 @@ func _process(delta):
 	var tactical=Input.is_action_pressed("tactical") and not ui.modal_open and not menu_open
 	Engine.time_scale=.15 if tactical else 1.0
 	update_mouse()
-	aiming=Input.is_action_pressed("aim") or tactical or Input.is_action_pressed("fire_right") or Input.is_action_pressed("fire_left") or camera_mode==2
+	aiming=(Input.is_action_pressed("aim") or tactical or Input.is_action_pressed("fire_right") or Input.is_action_pressed("fire_left") or camera_mode==2) and story.location!="hub"
 	var focus=player.global_position+Vector3(0,1.69 if camera_mode==2 else 1.4,0)
 	camera_pivot.position=camera_pivot.position.lerp(focus,clampf(real_dt*14,0,1))
 	var target_rot=Vector3(-PI/3,0,0) if top_view else Vector3(pitch,yaw,0)
@@ -223,6 +258,7 @@ func _process(delta):
 	player.visual.aim_pitch=clampf(atan2(aim_position.y-player.position.y-1.45,Vector2(aim_position.x-player.position.x,aim_position.z-player.position.z).length()),-.8,.8)
 	world.update_occlusion(top_view,player.position)
 	ui.update_hud()
+	story.tick(real_dt)
 	if wall_clock>event_until:ui.event_label.text=""
 	if not menu_open and not ui.modal_open:
 		active_enemies=enemies.filter(func(a):return is_instance_valid(a) and a.state.alive)
@@ -287,6 +323,12 @@ func attack_profile(actor: ScrapActor,hand: String) -> Dictionary:
 	return sim.action_profile(actor.state,hand)
 
 func perform_attack(actor: ScrapActor,hand: String,ai_target: ScrapActor=null):
+	if story.location=="prologue" and story.prologue==4 and actor==player:
+		actor.visual.kick(hand,"melee");play_sound("click",actor.visual.muzzle(hand));return
+	if story.location!="campaign":return
+	if actor!=player and sector==0 and "supply-0" not in used_objects and not training:
+		var has_weapon=player.state.held.get("right_arm")!=null or player.state.held.get("left_arm")!=null
+		if not has_weapon:return
 	if not actor.state.alive:return
 	var mode=attack_mode if actor.is_player else "normal"
 	var profile=attack_profile(actor,hand)
@@ -351,7 +393,8 @@ func perform_attack(actor: ScrapActor,hand: String,ai_target: ScrapActor=null):
 func apply_hit(attacker: ScrapActor,victim: ScrapActor,zone: String,profile: Dictionary,mode: String,scale: float):
 	if not victim.is_player and victim.state.archetype in ["E03","E07","E10"] and sim.functional(victim.state,"left_arm") and victim.state.heat<70:
 		var toward=(attacker.position-victim.position).normalized()
-		if (-victim.global_basis.z).dot(toward)>.4 and not (victim.state.archetype=="E10" and objectives.size()>=2):zone="left_arm";scale*=.45
+		var melee=str(profile.get("attack_delivery","")) in ["melee","tool","shield_bash"]
+		if (-victim.global_basis.z).dot(toward)>.4 and (zone=="left_arm" or melee) and not (victim.state.archetype=="E10" and objectives.size()>=2):zone="left_arm";scale*=.85
 	if victim==player and Input.is_action_pressed("block"):
 		var shield=sim.slot_def(player.state,"left_arm")
 		if shield.get("is_shield_arm",false) and sim.functional(player.state,"left_arm"):
@@ -419,6 +462,8 @@ func begin_salvage(actor: ScrapActor,zone: String,method: String,seconds: float)
 	notice("Демонтаж %s / %.1f с" % [ScrapCatalog.zone_label(zone),seconds],seconds)
 
 func scan_target():
+	var nearby=world.near(player.position)
+	if nearby.get("kind","")=="wreck":ui.scan(nearby.node);return
 	if not sim.functional(player.state,"sensor"):notice("Сенсор отключён. Нужен ремонт.");return
 	if player.state.energy<2:notice("Недостаточно энергии для сканирования");return
 	player.state.energy-=2
@@ -440,7 +485,14 @@ func interact():
 		if corpse!=null:ui.salvage(corpse)
 		return
 	match near.kind:
+		"market":story.market()
+		"wreck":ui.salvage(near.node)
+		"npc":story.talk(near.data.id)
+		"charge":story.charge()
+		"hub_exit":story.leave_hub(1)
+		"hub_dump":story.leave_hub(0)
 		"return":
+			if sector==1:story.enter_hub();return
 			var threat=false
 			for a in enemies:
 				if a.state.alive and a.alerted and a.position.distance_to(player.position)<12:threat=true
@@ -453,10 +505,17 @@ func interact():
 			var objective_index=int(near.data.objective)
 			if objective_index not in objectives:objectives.append(objective_index)
 			near.used=true;used_objects.append(near.id);near.label.modulate=Color("526b62");journal.append(near.data.text)
+			if sector==1 and objective_index==2:story.flags["transport_evidence"]=true
 			if not training:save_game()
 			ui.message(near.title,near.data.text)
 		"cache":
-			grant_partition(sector);near.used=true;used_objects.append(near.id);notice("Оборудование и программы добавлены. I — инвентарь.")
+			if sector<2:
+				for slot in ["left_arm","right_arm","sensor"]:
+					var source=sim.robot("E02").assembly.get(slot)
+					if source!=null:source.location="storage";player.state.inventory.append(source)
+				player.state.credits+=40
+			else:grant_partition(sector)
+			near.used=true;used_objects.append(near.id);notice("Сервисное оборудование добавлено. I — инвентарь.")
 		"supply":
 			var loadouts=[["PIPE_CLUB","SCRAP_KNIFE","LIGHT_PISTOL"],["STUN_BATON","CUTTER_TOOL","NAIL_GUN"],["COIL_PISTOL","PULSE_SHOTGUN","EMP_THROWER"],["THERMAL_SAW","RAIL_RIFLE","SMART_NEEDLE"],["ARC_SPIKER_PROTOTYPE"]]
 			for id in loadouts[sector]:player.state.weapons.append(sim.item(id))
@@ -471,6 +530,7 @@ func interact():
 			for a in enemies:
 				if a.state.alive:alive=true
 			if alive:notice("Шлюз заблокирован: активные боевые системы в секторе");return
+			if sector==0:story.enter_hub();return
 			if sector==4:
 				player.state["chapter_complete"]=true;save_game();ui.message("ГЛАВА 01 ЗАВЕРШЕНА","Внешний приказ прерван. У вас есть подтверждение, что авария была организована.\n\nКорпус покидает комплекс. Корпоративная подпись сохранена в журнале.",func():ui.menu())
 			else:enter_sector(sector+1);ui.message(ScrapCampaign.SECTORS[sector].title,ScrapCampaign.SECTORS[sector].intro)
@@ -500,6 +560,7 @@ func respawn_training():
 		var id="E%02d" % (i+1);var a=create_actor(sim.robot(id),Vector3((i%2)*4-2,2.2 if id in ["E05","E06"] else .05,-12-floori(i/2.0)*17));a.uuid="training-"+id;enemies.append(a)
 
 func raise_alarm(pos: Vector3):
+	if sector<2 or story.location!="campaign":return
 	var active_count=0
 	for a in enemies:
 		if a.state.alive and a.position.distance_to(player.position)<30:active_count+=1
@@ -517,26 +578,54 @@ func notice(text: String,duration: float=3.0):
 	ui.event_label.text=text;event_until=wall_clock+duration
 
 func save_game(path: String="") -> bool:
+	if not replay_restore.is_empty():return true
 	if training:return false
 	if path=="":path=ScrapPersistence.DIRECTORY+"/acceptance-campaign.json" if automation else ScrapPersistence.SAVE
 	for a in enemies:
 		if a.state.alive and a.alerted and a.position.distance_to(player.position)<12:notice("Нельзя сохранить во время боя");return false
-	sector_records[str(sector)]=snapshot_sector()
-	var data={"version":1,"player":player.state,"sector":sector,"sectors":sector_records,"journal":journal,"position":[player.position.x,player.position.y,player.position.z],"camera":{"mode":camera_mode,"top":top_view,"yaw":yaw,"pitch":pitch,"distance":top_distance},"serial":sim.serial,"saved_at":Time.get_datetime_string_from_system()}
+	sector_records[record_key()]=snapshot_sector()
+	var data=save_payload()
 	return ScrapPersistence.write(path,data)==OK
+
+func save_payload() -> Dictionary:
+	sector_records[record_key()]=snapshot_sector()
+	return {"version":2,"story":story.data(),"player":player.state,"sector":sector,"sectors":sector_records,"journal":journal,"position":[player.position.x,player.position.y,player.position.z],"camera":{"mode":camera_mode,"top":top_view,"yaw":yaw,"pitch":pitch,"distance":top_distance},"serial":sim.serial,"saved_at":Time.get_datetime_string_from_system()}
+
+func replay_prologue():
+	if not story.flags.is_empty():replay_restore=save_payload().duplicate(true)
+	else:replay_restore=ScrapPersistence.read()
+	if replay_restore.is_empty():replay_restore={"no_campaign":true}
+	ui.close();new_game(false)
+	if story.prologue<0:story.begin()
+
+func end_replay():
+	var previous=replay_restore;replay_restore={}
+	if is_instance_valid(story.subtitle):story.subtitle.queue_free();story.subtitle=null
+	if not previous.get("no_campaign",false):load_save_data(previous)
+	else:story.reset();enter_sector(0,false)
+	ui.menu()
 
 func continue_game(path: String=""):
 	if path=="":path=ScrapPersistence.DIRECTORY+"/acceptance-campaign.json" if automation else ScrapPersistence.SAVE
 	var data=ScrapPersistence.read(path)
 	if data.is_empty():notice("Сохранение не найдено");ui.menu();return
+	load_save_data(data)
+
+func load_save_data(data: Dictionary):
 	menu_open=false;training=false;ui.close();sim.serial=int(data.serial);sector_records=data.sectors;journal=data.journal
+	story.reset();story.restore(data.get("story",{"location":"campaign","flags":{"legacy_campaign":true,"prologue_complete":true}}))
 	if player!=null:remove_child(player);player.queue_free()
 	player=create_actor(data.player,Vector3.ZERO,true)
+	player.state["personality_uid"]=story.core.uid
 	enter_sector(int(data.sector),false)
 	player.position=Vector3(data.position[0],data.position[1],data.position[2]);top_view=data.camera.top;yaw=data.camera.yaw;pitch=data.camera.pitch;top_distance=data.camera.distance
 	set_camera_mode(int(data.camera.get("mode",1 if top_view else 0)))
 	if data.get("recovered_backup",false):notice("Основной файл повреждён. Восстановлена резервная копия.")
 	update_mouse()
+	if story.prologue>=0:story.show_line()
+
+func record_key() -> String:
+	return str(sector) if story.location=="campaign" else story.location
 
 func load_settings():
 	var path=ScrapPersistence.DIRECTORY+"/settings.json"
@@ -549,6 +638,8 @@ func load_settings():
 					InputMap.action_erase_events(action);var k=InputEventKey.new();k.physical_keycode=int(data.keys[action]);InputMap.action_add_event(action,k)
 
 func apply_settings():
+	ui.resize_interface()
+	apply_audio_settings()
 	var keys={}
 	for action in key_actions:
 		var events=InputMap.action_get_events(action)

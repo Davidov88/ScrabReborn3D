@@ -23,10 +23,11 @@ func build(owner: ScrapUI):
 	ui.button("РУЧНОЕ ОРУЖИЕ",func():ui.inventory(true,"weapons"),toolbar)
 	ui.button("ПРОГРАММЫ",func():ui.inventory(true,"programs"),toolbar)
 	if not ui.workshop_undo.is_empty():ui.button("ОТМЕНИТЬ ПОСЛЕДНЮЮ ЗАМЕНУ",undo,toolbar)
-	var columns=HBoxContainer.new();columns.add_theme_constant_override("separation",18);ui.content.add_child(columns)
-	var body=VBoxContainer.new();body.custom_minimum_size.x=360;body.size_flags_horizontal=Control.SIZE_EXPAND_FILL;columns.add_child(body)
-	var list=VBoxContainer.new();list.custom_minimum_size.x=390;list.size_flags_horizontal=Control.SIZE_EXPAND_FILL;columns.add_child(list)
-	var detail=VBoxContainer.new();detail.custom_minimum_size.x=395;detail.size_flags_horizontal=Control.SIZE_EXPAND_FILL;columns.add_child(detail)
+	var columns=HFlowContainer.new();columns.add_theme_constant_override("h_separation",18);columns.add_theme_constant_override("v_separation",18);ui.content.add_child(columns)
+	var width=maxf(270,(ui.root.size.x-105)/3)
+	var body=VBoxContainer.new();body.custom_minimum_size.x=width;body.size_flags_horizontal=Control.SIZE_EXPAND_FILL;columns.add_child(body)
+	var list=VBoxContainer.new();list.custom_minimum_size.x=width;list.size_flags_horizontal=Control.SIZE_EXPAND_FILL;columns.add_child(list)
+	var detail=VBoxContainer.new();detail.custom_minimum_size.x=width;detail.size_flags_horizontal=Control.SIZE_EXPAND_FILL;columns.add_child(detail)
 	text("КАРТА КРЕПЛЕНИЙ",body,15,ScrapUI.ACCENT)
 	var preview=r.duplicate(true)
 	if selected_index>=0:game.sim.install(preview,selected_index,ui.selected_slot)
@@ -54,7 +55,7 @@ func build(owner: ScrapUI):
 	if after.idle>after.generation:text("ДЕФИЦИТ ПИТАНИЯ: заряд будет падать",body,14,Color("e18766"))
 	text(ScrapCatalog.zone_label(ui.selected_slot),list,21,ScrapUI.ACCENT)
 	text("ПКМ — атака левой рукой" if ui.selected_slot=="left_arm" else "ЛКМ — атака правой рукой" if ui.selected_slot=="right_arm" else slot_purpose(ui.selected_slot),list,14,ScrapUI.MUTED)
-	var scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(390,530);scroll.size_flags_horizontal=Control.SIZE_EXPAND_FILL;list.add_child(scroll)
+	var scroll=ScrollContainer.new();scroll.custom_minimum_size=Vector2(width,450);scroll.size_flags_horizontal=Control.SIZE_EXPAND_FILL;list.add_child(scroll)
 	var candidates=VBoxContainer.new();candidates.size_flags_horizontal=Control.SIZE_EXPAND_FILL;candidates.add_theme_constant_override("separation",10);scroll.add_child(candidates)
 	var count=0
 	for i in range(r.inventory.size()):
@@ -72,7 +73,7 @@ func build(owner: ScrapUI):
 	text(game.catalog.label(candidate.id),detail,22)
 	var picture=game.catalog.reference_texture(d)
 	if picture!=null:
-		var art=TextureRect.new();art.texture=picture;art.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;art.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;art.custom_minimum_size=Vector2(350,150);detail.add_child(art)
+		var art=TextureRect.new();art.texture=picture;art.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;art.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;art.custom_minimum_size=Vector2(width,150);detail.add_child(art)
 	else:ui.add_part_preview(d,detail)
 	text(game.catalog.summary(d),detail,15,ScrapUI.TEXT)
 	if d.get("type","")=="arm":
@@ -121,6 +122,9 @@ func install(index: int):
 	var r=game.player.state;var before=r.duplicate(true)
 	var error=game.sim.install(r,index,ui.selected_slot)
 	if error=="":
+		if ui.selected_slot=="sensor":
+			game.story.core.transfer_count=int(game.story.core.get("transfer_count",0))+1
+			game.notice("Сенсор заменён. Личностное ядро Ильи перенесено в новый корпус.")
 		ui.workshop_undo.append(before)
 		if ui.workshop_undo.size()>8:ui.workshop_undo.pop_front()
 		game.player.refresh();ui.workshop_candidate=""

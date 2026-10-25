@@ -103,5 +103,111 @@
     "source": "https://opengameart.org/content/lost-in-a-bad-place-horror-ambience-loop",
     "sha256": "ad9a9f39240ef5862d3a6dc5220893926c6873aa0e08a641dadf3f1c0acc2cd4",
     "modifications": "Renamed only; quiet looping music layer."
+  },
+  {
+    "id": "quaternius-ual1",
+    "source": "https://opengameart.org/content/universal-animation-library",
+    "download": "https://opengameart.org/sites/default/files/universal_animation_librarystandard.zip",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "18ff1a7215f4852b320203e8aaf02a1578b5c8eef9027fbaedfcedc7b85a3ac2",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\quaternius-ual1.zip",
+    "modifications": "Production input; see per-asset preparation manifests for runtime derivatives."
+  },
+  {
+    "id": "quaternius-ual2",
+    "source": "https://opengameart.org/content/universal-animation-library-2",
+    "download": "https://opengameart.org/sites/default/files/universal_animation_library_2standard.zip",
+    "author": "Quaternius",
+    "license": "CC0-1.0",
+    "sha256": "ec0e40d6d78fe9aaad59e322f40865a8675c22f0745e291622e54520391a9217",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\quaternius-ual2.zip",
+    "modifications": "Production input; see per-asset preparation manifests for runtime derivatives."
+  },
+  {
+    "id": "robotic-movement",
+    "source": "https://opengameart.org/content/robotic-mechanic-step-sounds",
+    "download": "https://opengameart.org/sites/default/files/robotic.7z",
+    "author": "Lee Barkovich; submitted by Iwan Gabovitch (qubodup)",
+    "license": "CC-BY-3.0",
+    "sha256": "85884b663179ea372acb3b1f2af602eb438cebc7da5a21cb7d88f2cb11e00839",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\robotic-movement.7z",
+    "modifications": "Production input; see per-asset preparation manifests for runtime derivatives."
+  },
+  {
+    "id": "kenney-impact",
+    "source": "https://kenney.nl/assets/impact-sounds",
+    "download": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "author": "Kenney",
+    "license": "CC0-1.0",
+    "sha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\kenney-impact.zip",
+    "modifications": "Production input; see per-asset preparation manifests for runtime derivatives."
+  },
+  {
+    "id": "makehuman-system-cc0",
+    "source": "https://download.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html",
+    "author": "MakeHuman Community",
+    "license": "CC0-1.0",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\makehuman_system_assets_cc0.zip",
+    "sha256": "b542127a8e25547c7c29c19f2d1d2adb9a664c80396ecd694095dbc8028a0107",
+    "modifications": "Adult human bases, system skins, eyes, hair and casual clothing; helper masks baked, MPFB game-engine rig retained, textures reduced to 1K, exported GLB."
+  },
+  {
+    "id": "mpfb-2.0.18-source",
+    "source": "https://github.com/makehumancommunity/mpfb2/releases/tag/v2.0.18",
+    "author": "MakeHuman Community",
+    "license": "GPL-3.0 (tool code), CC0-1.0 (core graphic assets)",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\mpfb2-v2.0.18.zip",
+    "sha256": "ada7c4ff11e79cf6ed9b441bccabc52c9359f2848b988f66e89c14c30b21fed7",
+    "modifications": "External authoring tool only; GPL tool code is not included in game runtime."
+  },
+  {
+    "id": "kaykit-animations-free-1.1",
+    "source": "https://kaylousberg.itch.io/kaykit-character-animations",
+    "author": "Kay Lousberg",
+    "license": "CC0-1.0",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\kaykit-animations-free-1.1.zip",
+    "sha256": "65882f31f905ad2e953819648a59287cdeab8f623908d5ef701971d3758be20f",
+    "modifications": "Free 1.1; selected backward, strafe and dodge clips retargeted to adult Quaternius skeleton, root translation removed. Originals retained."
+  },
+  {
+    "id": "rain-window-alxl",
+    "source": "https://opengameart.org/content/rain-on-window-loop",
+    "author": "alxl",
+    "license": "CC0-1.0",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\rain_on_window_loop.wav",
+    "sha256": "97b9405025e5ed7ed8a58d24dd7146d06e925519b1f718efda94bb85dcd1a61a",
+    "modifications": "Looped rain ambience for the accident scene; playback gain adjusted."
+  },
+  {
+    "id": "einar-charge-3.4",
+    "source": "https://www.blender.org/download/demo-files/",
+    "author": "Blender Foundation / Blender Studio",
+    "license": "CC-BY (as distributed by Blender Studio)",
+    "original_archive": "D:\\GameDev\\asset-downloads\\blender-charge-source.zip",
+    "sha256": "24935766c9938686c092c094ffb8e0465955bfd7a05876113969d4776285029d",
+    "modifications": "Einar extracted from public Charge scene. Cinema controls/helper geometry removed; original materials baked into 2K atlas, mesh reduced and rebound to game rig. Mechanical arm extracted for L.R.-01. Einar Rig (CC-BY) Blender Foundation | studio.blender.org",
+    "download": "https://download.blender.org/demo/splash/blender-3.4-splash.zip"
+  },
+  {
+    "id": "industrial_pipe_lamp",
+    "source": "https://polyhaven.com/a/industrial_pipe_lamp",
+    "author": "Poly Haven",
+    "license": "CC0-1.0",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\polyhaven\\industrial_pipe_lamp\\industrial_pipe_lamp_1k.blend",
+    "sha256": "122b8bdc4d72c02c51fb3edad2cfd605c4d268d044acbf81e0faa4f55ca8a14c",
+    "modifications": "Original 1K models and dependencies retained, subdivision removed, denser meshes reduced, exported GLB. Real game lights added at fixture locations.",
+    "download": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/industrial_pipe_lamp/industrial_pipe_lamp_1k.blend"
+  },
+  {
+    "id": "industrial_caged_sconce",
+    "source": "https://polyhaven.com/a/industrial_caged_sconce",
+    "author": "Poly Haven",
+    "license": "CC0-1.0",
+    "original_archive": "D:\\GameDev\\asset-downloads\\lowgrid\\polyhaven\\industrial_caged_sconce\\industrial_caged_sconce_1k.blend",
+    "sha256": "eb4c9c84520ab4c747a880d49c8390573ee86e5d6faf42b9a436fb0989b82ff5",
+    "modifications": "Original 1K models and dependencies retained, subdivision removed, denser meshes reduced, exported GLB. Real game lights added at fixture locations.",
+    "download": "https://dl.polyhaven.org/file/ph-assets/Models/blend/1k/industrial_caged_sconce/industrial_caged_sconce_1k.blend"
   }
 ]

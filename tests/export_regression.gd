@@ -40,9 +40,9 @@ func run(game):
 	game.player.refresh()
 	require(JSON.stringify(enemy.state)==before,"Player installation leaves enemy state untouched")
 	require(enemy.visual.mounts.right_arm.get_instance_id()==mesh_id,"Player installation leaves enemy visual untouched")
-	game.player.visual.animate(.15,3,false,false)
+	key(KEY_W,true);await frames(20)
 	var upper=game.player.visual.joints.right_armUpperArm.rotation.x;var fore=game.player.visual.joints.right_armForearm.rotation.x
-	game.player.visual.animate(.15,3,false,false)
+	await frames(15);key(KEY_W,false)
 	require(not is_equal_approx(upper,game.player.visual.joints.right_armUpperArm.rotation.x),"Shoulder animation")
 	require(not is_equal_approx(fore,game.player.visual.joints.right_armForearm.rotation.x),"Elbow animation")
 	game.set_camera_mode(0)

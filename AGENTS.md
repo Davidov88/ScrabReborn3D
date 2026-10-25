@@ -1,5 +1,8 @@
 # SCRAP REBORN 3D
 
+## Low Grid 0.2 scope
+Display name: Low Grid: Ошибка 63. Preserve project path. The dump must offer fixed salvageable robot/cyborg donor components before its single hostile encounter. These are exact component instances, not random chest rolls; removed donor sockets remain empty after saves, hub travel and reloads. Keep personality separate from interchangeable sensor hardware. Prologue replay must never overwrite campaign progress. Humans and modified humans are friendly characters in this stage.
+
 ## Required asset workflow
 Before creating any model, animation, material, sound, interface element, movement/physics behavior, combat effect, projectile, laser, smoke or spark, search known open libraries and official author repositories for suitable assets. Download and evaluate appropriate free assets, then adapt them to the project's industrial visual and technical standards. Create only missing elements and the game's distinctive modular equipment. Check each individual asset's license. Record source URL, author, license, version, SHA256 and modifications in the asset register, and include required notices in the distribution. Default budget is zero. Do not use preview images as licensed game assets. Do not import an entire unrelated game framework.
 

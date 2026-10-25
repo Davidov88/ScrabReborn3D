@@ -18,12 +18,12 @@ static func read(path: String=SAVE) -> Dictionary:
 	if not FileAccess.file_exists(path):return {}
 	var parser=JSON.new()
 	var error=parser.parse(FileAccess.get_file_as_string(path))
-	if error==OK and parser.data is Dictionary and parser.data.get("version",0)==1 and parser.data.has("player"):
+	if error==OK and parser.data is Dictionary and int(parser.data.get("version",0)) in [1,2] and parser.data.has("player"):
 		return parser.data
 	var corrupt=path+".corrupt-"+str(int(Time.get_unix_time_from_system()))
 	DirAccess.copy_absolute(path,corrupt)
 	if FileAccess.file_exists(path+".bak"):
 		var backup=JSON.parse_string(FileAccess.get_file_as_string(path+".bak"))
-		if backup is Dictionary and backup.get("version",0)==1 and backup.has("player"):
+		if backup is Dictionary and int(backup.get("version",0)) in [1,2] and backup.has("player"):
 			backup["recovered_backup"]=true;return backup
 	return {}

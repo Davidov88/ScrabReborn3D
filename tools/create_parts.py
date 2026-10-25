@@ -169,9 +169,18 @@ def arm(i,armor,glow,root):
         cube('Hack interface',(0,.09,-.19),(.095,.055,.08),glow,fore,.008)
     else:
         cube('Palm',(0,.01,-.28),(.11 if not heavy else .16,.09,.11),dark,fore,.016)
-        for x in (-.035,0,.035):
-            cube('Articulated finger',(x,.025,-.36),(.024,.038,.075),steel,fore,.007)
-        cube('Thumb',(-.075,.025,-.29),(.035,.04,.075),armor,fore,.008)
+        for name,x in [('Index',-.043),('Middle',-.014),('Ring',.014),('Pinky',.043)]:
+            pivot=empty('Finger'+name+'1',(x,.025,-.325),fore)
+            for segment in range(3):
+                if segment>0:pivot=empty('Finger'+name+str(segment+1),(0,0,-.027),pivot)
+                cyl('Digital hinge',(0,0,0),.012,.024,dark,pivot,(1,0,0),10)
+                cube('Finger phalanx',(0,.002,-.014),(.022,.029,.027),steel,pivot,.004)
+                cube('Grip contact',(0,.017,-.014),(.017,.009,.021),dark,pivot,.002)
+        thumb=empty('FingerThumb1',(-.069,.014,-.28),fore);thumb.rotation_euler.y=-.65
+        for segment in range(3):
+            if segment>0:thumb=empty('FingerThumb'+str(segment+1),(0,0,-.025),thumb)
+            cyl('Thumb hinge',(0,0,0),.013,.026,steel,thumb,(1,0,0),10)
+            cube('Thumb phalanx',(0,0,-.014),(.026,.032,.028),armor,thumb,.004)
 
 def legs(i,armor,glow,root):
     heavy=i in (5,6,9,12);spread=.14 if not heavy else .18

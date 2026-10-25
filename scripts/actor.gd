@@ -16,6 +16,7 @@ var nav: NavigationAgent3D
 var attack_timer=0.0
 var disabled_timer=0.0
 var reload_until={}
+var reload_requests={}
 var drone=false
 var enemy_name=""
 var alerted=false
@@ -45,6 +46,7 @@ func build_hitboxes():
 		if slot in ["left_arm","right_arm"]:
 			box.size=Vector3(.18,.28,.20)
 			var lower=CollisionShape3D.new();var lower_box=BoxShape3D.new();lower_box.size=Vector3(.18,.32,.22);lower.shape=lower_box;area.add_child(lower);forearm_shapes[slot]=lower
+			if sim.slot_def(state,slot).get("is_shield_arm",false):lower_box.size=Vector3(.36,.68,.12)
 
 func _physics_process(dt):
 	if game==null or game.menu_open or game.ui.modal_open:return
@@ -61,6 +63,7 @@ func _physics_process(dt):
 			var fore_basis=fore.global_basis.orthonormalized()
 			if fore_basis.determinant()<0:fore_basis.x=-fore_basis.x
 			forearm_shapes[slot].global_transform=Transform3D(fore_basis,fore.to_global(Vector3(0,-.14,0)))
+			if sim.slot_def(state,slot).get("is_shield_arm",false):forearm_shapes[slot].global_transform=Transform3D(fore_basis,fore.to_global(Vector3(0,-.16,-.16)))
 		var internal=slot in ["cpu","power_core","cooling","controller","memory"]
 		var exposed=not state.assembly.has("torso") or float(state.assembly.torso.durability)/float(state.assembly.torso.max_durability)<=.4
 		hitboxes[slot].collision_layer=4 if not state.assembly[slot].destroyed and (not internal or exposed) else 0
@@ -75,10 +78,13 @@ func _physics_process(dt):
 	else:enemy_movement(dt)
 	var ranged=str(sim.action_profile(state,"right_arm").get("attack_delivery","melee")) not in ["melee","tool","shield_bash"]
 	var ready_to_aim=game.aiming and (ranged or Input.is_action_pressed("aim")) if is_player else alerted and ranged
-	visual.animate(dt,Vector2(velocity.x,velocity.z).length(),ready_to_aim,is_player and Input.is_action_pressed("block"))
+	var guarding=not is_player and state.archetype in ["E03","E07","E10"] and sim.functional(state,"left_arm") and state.heat<70 and alerted
+	visual.animate(dt,Vector2(velocity.x,velocity.z).length(),ready_to_aim,(is_player and Input.is_action_pressed("block")) or guarding)
 	if global_position.y < -10:global_position=patrol_origin+Vector3.UP
 
 func player_movement(dt):
+	if game.story.prologue>=0 and game.story.prologue<4:
+		velocity=Vector3.ZERO;return
 	var axis=Input.get_vector("left","right","forward","back")
 	var basis=Basis(Vector3.UP,game.yaw if not game.top_view else 0)
 	var direction=basis*Vector3(axis.x,0,axis.y)
@@ -88,6 +94,9 @@ func player_movement(dt):
 	if state.energy<=0:speed*=.5
 	if Input.is_action_just_pressed("dash") and state.energy>=8 and sim.functional(state,"legs"):
 		state.energy-=8;state.heat+=3;disabled_timer=.22
+		if visual.motion!=null:
+			var local=global_basis.inverse()*direction
+			visual.motion.play_action("KK_Dodge_Backward" if local.z>.2 else "KK_Dodge_Left" if local.x<-.2 else "KK_Dodge_Right" if local.x>.2 else "KK_Dodge_Forward")
 		if direction.length()<.1:direction=-global_basis.z
 	if disabled_timer>0:disabled_timer-=dt;speed=11*s.speed*(1+sim.hardware(state,"dash_bonus")/100.0)
 	if sim.active(state,"BATTERY_SAVER") and direction.length()>.1:state.energy=maxf(0,state.energy-dt*.25)
@@ -100,8 +109,9 @@ func player_movement(dt):
 	var facing=Vector3(target.x,global_position.y,target.z)-global_position if game.aiming or game.top_view or direction.length_squared()<.01 else direction
 	if facing.length_squared()>.01:
 		rotation.y=lerp_angle(rotation.y,atan2(-facing.x,-facing.z),clampf(dt*14,0,1))
-	if Input.is_action_pressed("fire_right"):shoot("right_arm")
-	if Input.is_action_pressed("fire_left"):shoot("left_arm")
+	if not game.ui.pointer_on_scanner():
+		if Input.is_action_pressed("fire_right"):shoot("right_arm")
+		if Input.is_action_pressed("fire_left"):shoot("left_arm")
 
 func line_of_sight(other: ScrapActor) -> bool:
 	if not is_inside_tree() or not is_instance_valid(other) or not other.is_inside_tree():return false
@@ -112,6 +122,12 @@ func line_of_sight(other: ScrapActor) -> bool:
 
 func enemy_movement(dt):
 	if game.player==null:return
+	if game.sector==0 and not game.training and game.player.state.held.right_arm==null and game.player.state.held.left_arm==null:
+		velocity=Vector3.ZERO;awareness=0;alerted=false;return
+	if game.sector==1 and not game.training:
+		for other in game.enemies:
+			if other!=self and other.state.alive and other.patrol_origin.z>patrol_origin.z:
+				velocity=Vector3.ZERO;awareness=0;alerted=false;return
 	ai_phase+=dt;attack_timer-=dt
 	var captured=float(state.captured_until)>float(state.time)
 	var target=game.player
@@ -126,6 +142,8 @@ func enemy_movement(dt):
 	if sight and dist<sense:awareness=minf(3,awareness+dt*2*(1-sim.hardware(target.state,"reaction_suppression")/100.0))
 	else:awareness=maxf(0,awareness-dt*.3)
 	alerted=awareness>0.8
+	if alerted and state.get("intro_patrol",false) and not state.get("warning_given",false):
+		state["warning_given"]=true;attack_timer=maxf(attack_timer,1.8);game.notice("ПОСТОВОЙ: корпус вскрыт, оружейная рука повреждена. Выберите узел сканером.",5)
 	var destination=patrol_origin+Vector3(sin(ai_phase*.35)*2,0,cos(ai_phase*.35)*2)
 	if alerted:destination=target.global_position
 	var range_m=2.0 if state.archetype in ["E01","E02","E04"] else 8.0
@@ -187,5 +205,22 @@ func shoot(hand: String):
 	cooldown[hand]=clampf(1.4-float(profile.get("attack_speed",50))*.013,.18,1.3)
 	game.perform_attack(self,hand,null)
 
+func request_reload():
+	if not reload_requests.is_empty():return
+	for hand in ["left_arm","right_arm"]:
+		var weapon=state.held.get(hand)
+		if weapon==null or not sim.functional(state,hand):continue
+		var definition=sim.definition(weapon);var ammunition=definition.get("ammo_type")
+		if ammunition==null or int(state.ammo.get(ammunition,0))<=0:continue
+		if int(weapon.magazine)>=int(definition.get("magazine_size",12)):continue
+		reload_requests[hand]=weapon.uid;reload_until[hand]=state.time+visual.motion.player.get_animation("Pistol_Reload").length
+	if not reload_requests.is_empty():visual.motion.play_action("Pistol_Reload")
+
+func commit_reload():
+	for hand in reload_requests:
+		var weapon=state.held.get(hand)
+		if weapon!=null and weapon.uid==reload_requests[hand] and sim.functional(state,hand):sim.reload(state,hand)
+	reload_requests.clear()
+
 func refresh():
-	visual.rebuild();build_hitboxes()
+	reload_requests.clear();visual.rebuild();build_hitboxes()

@@ -1,0 +1,6 @@
+Einar Rig (CC-BY) Blender Foundation | studio.blender.org
+
+Source: https://studio.blender.org/characters/einar/v1/
+Public source scene: https://www.blender.org/download/demo-files/ (Blender 3.4 Charge)
+
+Modified for Low Grid: game mesh reduction, removal of cinema control geometry, baked materials, game skeleton and extracted mechanical arm. Original scene retained on D.

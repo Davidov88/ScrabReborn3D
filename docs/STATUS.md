@@ -1,4 +1,18 @@
-# SCRAP REBORN 3D — development build 0.1.2
+# Low Grid: Ошибка 63 — development build 0.2.0
+
+## 0.2.0 — current handoff for user testing
+
+Implemented: six staged prologue scenes with Russian subtitles, skip/replay, independent personality core, save format 2 and legacy loading; two precombat donor bodies with fixed salvageable service components and exact UID persistence; damaged initial legs restored by Shov; safe station with named residents, background population, charging, market and workshop; three sequential sorting encounters and physical evidence backup.
+
+Integrated ready assets: Quaternius animation skeleton/AnimationTree, retargeted KayKit backward/strafe/dodge motion, MakeHuman residents, Einar mechanic and L.R.-01 arm, Poly Haven fixtures, robot movement layers and rain. Reload uses an animation commit event. Workshop and salvage expose attachment points and before/after metrics.
+
+Verified: 247 simulation checks; exported camera/weapon/workshop integration; story-system regression including donor UID persistence, one-time rewards, reload transaction and prologue replay. An accelerated input-driven exported route completed precombat salvage/installation, the dump encounter and all three sorting encounters. It exposed an entrance wall and an interaction-range issue, now fixed; the return path still requires final end-to-end retesting.
+
+Not yet accepted: full 45–60 minute duration, finished cinematic staging, reference fidelity of all first-pass robot families, baked indirect lighting, final 1080p performance target and a completed one-hour stability test. This build must not be presented as completion of the entire approved plan.
+
+Runtime caches are physically stored in D:/GameDev/cache/LowGridRuntime through the project-specific Windows data-directory junction; saves remain in the project's .userdata folder on D.
+
+## Historical 0.1.2 notes
 
 This is an unfinished development build. It does not satisfy the full first-version acceptance contract yet.
 
