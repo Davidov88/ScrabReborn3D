@@ -1,0 +1,1 @@
+Particle implementation reference: https://github.com/godotengine/godot-demo-projects/tree/master/3d/particles ; MIT. GPU collision/SDF scene rejected for Compatibility renderer. CPU particles implement short-lived effects; Kenney smoke texture reused under CC0.

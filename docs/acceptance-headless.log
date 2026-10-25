@@ -1,0 +1,256 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+SECTOR_LOADED 0 enemies=6
+SECTOR_LOADED 0 enemies=6
+SCRAP_REBORN_READY catalog=135 external=42 weapons=13 programs=24
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SCRIPT ERROR: Invalid access to property or key 'left_arm' on a base object of type 'Dictionary'.
+   at: ScrapActor._physics_process (res://scripts/actor.gd:51)
+   GDScript backtrace (most recent call first):
+       [0] _physics_process (res://scripts/actor.gd:51)
+SECTOR_LOADED 0 enemies=6
+SECTOR_LOADED 1 enemies=6
+SECTOR_LOADED 2 enemies=6
+SECTOR_LOADED 3 enemies=6
+SECTOR_LOADED 4 enemies=5
+SECTOR_LOADED 4 enemies=5
+EXPORTED_ACCEPTANCE_OK ["top_camera", "third_person_camera", "exact_salvage_no_duplicate", "sector_0_objectives_and_combat", "sector_1_objectives_and_combat", "sector_2_objectives_and_combat", "sector_3_objectives_and_combat", "sector_4_objectives_and_combat", "chapter_complete", "save_reload_completed_chapter"]
+WARNING: 68 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 6 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

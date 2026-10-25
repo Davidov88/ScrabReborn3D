@@ -1,0 +1,128 @@
+[
+  {
+    "part": "GRID1_SERVICE_CORE",
+    "field": "power_gen",
+    "before": 14,
+    "after": 25,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "GRID1_SERVICE_CORE",
+    "field": "peak_output",
+    "before": 28,
+    "after": 46,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "PULSE2_TACTICAL_CORE",
+    "field": "power_gen",
+    "before": 20,
+    "after": 38,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "PULSE2_TACTICAL_CORE",
+    "field": "peak_output",
+    "before": 45,
+    "after": 73,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "REACTOR3_HEAVY_CORE",
+    "field": "power_gen",
+    "before": 35,
+    "after": 59,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "REACTOR3_HEAVY_CORE",
+    "field": "peak_output",
+    "before": 65,
+    "after": 100,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "SILENTCELL_MINI",
+    "field": "power_gen",
+    "before": 10,
+    "after": 18,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "SILENTCELL_MINI",
+    "field": "peak_output",
+    "before": 25,
+    "after": 30,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "SURGE_COMPACT_CORE",
+    "field": "power_gen",
+    "before": 18,
+    "after": 34,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "SURGE_COMPACT_CORE",
+    "field": "peak_output",
+    "before": 55,
+    "after": 65,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "GRID2_ENFORCEMENT_CORE",
+    "field": "power_gen",
+    "before": 28,
+    "after": 54,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "GRID2_ENFORCEMENT_CORE",
+    "field": "peak_output",
+    "before": 60,
+    "after": 96,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "SILENTCELL_H",
+    "field": "power_gen",
+    "before": 18,
+    "after": 34,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "SILENTCELL_H",
+    "field": "peak_output",
+    "before": 40,
+    "after": 53,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "PULSE3_HUNTER_CORE",
+    "field": "power_gen",
+    "before": 34,
+    "after": 57,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "PULSE3_HUNTER_CORE",
+    "field": "peak_output",
+    "before": 85,
+    "after": 91,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "OVERDRIVE_REACTOR_X",
+    "field": "power_gen",
+    "before": 48,
+    "after": 98,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  },
+  {
+    "part": "OVERDRIVE_REACTOR_X",
+    "field": "peak_output",
+    "before": 120,
+    "after": 166,
+    "reason": "Authored enemy assembly must support idle load and its strongest weapon"
+  }
+]

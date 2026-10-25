@@ -1,0 +1,2919 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Инициализация проекта (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Сканирование структуры файлов…[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Загрузка глобальных имен классов…[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Проверка GDExtensions…[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Создание скриптов автозагрузки…[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Инициализация плагинов…[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Начало сканирование файлов…[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Регистрация глобальных классов… (5 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | ScrapActor[39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | ScrapSimulation[39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | ScrapUI[39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Сканирование действий… (284 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | blaster-a.glb[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | blaster-b.glb[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | blaster-c.glb[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | blaster-d.glb[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | blaster-e.glb[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | blaster-f.glb[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | blaster-g.glb[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | blaster-h.glb[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | blaster-i.glb[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | blaster-j.glb[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | blaster-k.glb[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | blaster-l.glb[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | blaster-m.glb[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | blaster-n.glb[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | blaster-o.glb[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | blaster-p.glb[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | blaster-q.glb[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | blaster-r.glb[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | bullet-foam-thick.glb[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | bullet-foam-tip-thick.glb[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | bullet-foam-tip.glb[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | bullet-foam.glb[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | clip-large.glb[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | clip-small.glb[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | crate-medium.glb[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | crate-small.glb[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | crate-wide.glb[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | grenade-a.glb[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | grenade-b.glb[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | scope-large-a.glb[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | scope-large-b.glb[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | scope-small.glb[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | silencer-larger.glb[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | silencer-small.glb[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | smoke.glb[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | target-detail.glb[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | target-fragment-large.glb[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | target-fragment-small.glb[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | target-large.glb[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | target-small.glb[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | arrow-basic-rounded.glb[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | arrow-basic.glb[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | arrow-rounded.glb[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | arrow.glb[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | box-large.glb[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | box-long.glb[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | box-small.glb[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | box-wide.glb[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | button-floor-round-small.glb[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | button-floor-round.glb[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | button-floor-square-small.glb[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | button-floor-square.glb[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | catwalk-corner.glb[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | catwalk-cross.glb[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | catwalk-junction.glb[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | catwalk-stairs-loop.glb[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | catwalk-stairs.glb[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | catwalk-straight.glb[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | cog-a.glb[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | cog-b.glb[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | cog-c.glb[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | cog-d.glb[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | cog-e.glb[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | cone.glb[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | conveyor-bars-fence-slope.glb[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | conveyor-bars-fence.glb[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | conveyor-bars-high-slope.glb[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | conveyor-bars-high.glb[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | conveyor-bars-sides.glb[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | conveyor-bars-stripe-fence-slope.glb[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | conveyor-bars-stripe-fence.glb[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | conveyor-bars-stripe-high-slope.glb[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | conveyor-bars-stripe-high.glb[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | conveyor-bars-stripe-side.glb[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | conveyor-bars-stripe.glb[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | conveyor-bars.glb[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | conveyor-corner.glb[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | conveyor-cross.glb[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | conveyor-junction-t.glb[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | conveyor-long-part-end.glb[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | conveyor-long-part-middle.glb[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | conveyor-long-sides-part-end.glb[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | conveyor-long-sides-part-middle.glb[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | conveyor-long-sides.glb[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | conveyor-long-stripe-sides-part-end.glb[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | conveyor-long-stripe-sides-part-middle.glb[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | conveyor-long-stripe-sides.glb[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | conveyor-long-stripe.glb[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | conveyor-long.glb[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | conveyor-sides-cross.glb[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | conveyor-sides-junction-t.glb[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | conveyor-sides.glb[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-corner.glb[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-cross.glb[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-junction-t.glb[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-part-end.glb[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-part-middle.glb[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-sides-cross.glb[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-sides-junction-t.glb[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | conveyor-stripe-sides.glb[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | conveyor-stripe.glb[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | conveyor.glb[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | crane-lift.glb[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | crane-magnet.glb[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | crane.glb[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | door-wide-closed.glb[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | door-wide-half.glb[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | door-wide-open.glb[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | door.glb[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | floor-large.glb[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | floor.glb[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | hopper-high-round.glb[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | hopper-high-square.glb[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | hopper-round.glb[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | hopper-square.glb[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | indicator-special-area.glb[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | indicator-special-arrow.glb[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | indicator-special-cross.glb[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | indicator-special-lines.glb[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | lever-double.glb[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | lever-single.glb[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | machine-bed.glb[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | machine-connection-hole.glb[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | machine-connection-pipe.glb[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | machine-fortified.glb[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | machine-window-bar.glb[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | machine-window.glb[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | machine.glb[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | oopi.glb[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-bend.glb[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-bump.glb[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-cross.glb[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-curve.glb[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-junction.glb[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-long.glb[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-side.glb[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | pipe-glass-large-valve.glb[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | pipe-glass-large.glb[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | pipe-large-bend.glb[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | pipe-large-bump.glb[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | pipe-large-cross.glb[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | pipe-large-curve.glb[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | pipe-large-junction.glb[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | pipe-large-long.glb[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | pipe-large-side.glb[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | pipe-large-valve.glb[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | pipe-large.glb[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | piston-round.glb[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | piston-square.glb[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | piston-thin-round.glb[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | piston-thin-square.glb[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | robot-arm-a.glb[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | robot-arm-b.glb[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | scanner-high.glb[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | scanner-low.glb[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | screen-flat.glb[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | screen-hanging-small.glb[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | screen-hanging-wide.glb[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | screen-panel-flat.glb[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | screen-panel-small.glb[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | screen-panel-wide.glb[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | screen-small.glb[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | screen-wide.glb[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | structure-corner-inner.glb[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | structure-corner-outer.glb[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | structure-doorway-wide.glb[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | structure-doorway.glb[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | structure-high.glb[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | structure-medium.glb[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | structure-short.glb[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | structure-tall.glb[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | structure-wall.glb[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | structure-window-wide.glb[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | structure-window.glb[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | structure-yellow-high.glb[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | structure-yellow-medium.glb[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | structure-yellow-short.glb[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | structure-yellow-tall.glb[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | top-large-checkerboard.glb[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | top-large.glb[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | top.glb[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | warning-orange.glb[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | warning-traffic.glb[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | balcony-floor-center.glb[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | balcony-floor-corner.glb[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | balcony-floor.glb[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | balcony-rail-center.glb[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | balcony-rail-corner.glb[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | balcony-rail.glb[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | bed-double-cover.glb[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | bed-double.glb[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | bed-single-cover.glb[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | bed-single.glb[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | chair-armrest-headrest.glb[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | chair-armrest.glb[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | chair-cushion-headrest.glb[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | chair-cushion.glb[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | chair-headrest.glb[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | chair.glb[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | computer-screen.glb[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | computer-system.glb[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | computer-wide.glb[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | computer.glb[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | container-flat-open.glb[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | container-flat.glb[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | container-tall.glb[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | container-wide.glb[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | container.glb[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | display-wall-wide.glb[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | display-wall.glb[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | door-double-closed.glb[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | door-double-half.glb[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | door-double.glb[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | door-single-closed.glb[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | door-single-half.glb[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | door-single.glb[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | floor-corner.glb[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | floor-detail.glb[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | floor-panel-corner.glb[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | floor-panel-end.glb[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | floor-panel-straight.glb[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | floor-panel.glb[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | floor.glb[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | pipe-bend-diagonal.glb[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | pipe-bend.glb[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | pipe-end-colored.glb[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | pipe-end.glb[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | pipe-ring-colored.glb[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | pipe-ring.glb[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | pipe.glb[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | rail-narrow.glb[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | rail.glb[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | rocks.glb[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | skip-rocks.glb[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | skip.glb[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | stairs-corner-inner.glb[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | stairs-corner.glb[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | stairs-handrail-single.glb[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | stairs-handrail.glb[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | stairs-ramp.glb[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | stairs-small-center.glb[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | stairs-small-corner-inner.glb[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | stairs-small-corner.glb[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | stairs-small-edge-handrail.glb[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | stairs-small-edge.glb[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | stairs-small-edges-handrail.glb[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | stairs-small-edges.glb[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | stairs.glb[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | structure-barrier-high.glb[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | structure-barrier.glb[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | structure-panel.glb[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | structure.glb[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | table-display-planet.glb[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | table-display-small.glb[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | table-display.glb[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | table-inset-small.glb[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | table-inset.glb[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | table-large.glb[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | table.glb[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | wall-banner.glb[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | wall-corner-banner.glb[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | wall-corner-round-banner.glb[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | wall-corner-round.glb[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | wall-corner.glb[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | wall-detail.glb[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | wall-door-banner.glb[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | wall-door-center.glb[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | wall-door-edge-banner.glb[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | wall-door-edge.glb[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | wall-door-wide-banner.glb[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | wall-door-wide.glb[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | wall-door.glb[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | wall-pillar-banner.glb[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | wall-pillar.glb[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | wall-switch.glb[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | wall-window-banner.glb[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | wall-window-frame.glb[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | wall-window-shutters.glb[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | wall-window.glb[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | wall.glb[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | menu.png[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | third-person.png[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | top-view.png[39m[0m
+[  99% ] [90m[1m_update_scan_actions[22m | workshop.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started Импорт или повторный импорт ассетов (427 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   0% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   0% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   0% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   0% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   1% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   1% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   1% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   1% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   2% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   2% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   2% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   2% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   3% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   3% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   3% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   3% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   3% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   4% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   4% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   4% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   4% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   5% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   5% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   5% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   5% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   6% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   6% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   6% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   6% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   7% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   7% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   7% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   7% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   7% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   8% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   8% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   8% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   8% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   9% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   9% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   9% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   9% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  10% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  10% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  10% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  10% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  10% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  11% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  11% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  11% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  11% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  12% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  12% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  12% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  12% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  13% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  13% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  13% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  13% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  14% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  14% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  14% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  14% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  14% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  15% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  15% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  15% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  15% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  16% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  16% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  16% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  16% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  17% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  17% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  17% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  17% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  17% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  18% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  18% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  18% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  18% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  19% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  19% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  19% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  19% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  20% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  20% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  20% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  20% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  21% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  21% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  21% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  21% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  21% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  22% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  22% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  22% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  22% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  23% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  23% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  23% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  23% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  24% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  24% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  24% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  24% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  25% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  25% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  25% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  25% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  25% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  26% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  26% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  26% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  26% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  27% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  27% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  27% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  27% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  28% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  28% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  28% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  28% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  28% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  29% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  29% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  29% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  29% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  30% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  30% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  30% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  30% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  31% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  31% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  31% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  31% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  32% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  32% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  32% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  32% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  32% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  33% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  33% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  33% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  33% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  34% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  34% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  34% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  34% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  35% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  35% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  35% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  35% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  35% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  36% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  36% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  36% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  36% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  37% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  37% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  37% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  37% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  38% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  38% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  38% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  38% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  39% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  39% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  39% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  39% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  39% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  40% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  40% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  40% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  40% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  41% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  41% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  41% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  41% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  42% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  42% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  42% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  42% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  42% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  43% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  43% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  43% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  43% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  44% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  44% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  44% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  44% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  45% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  45% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  45% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  45% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  46% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  46% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  46% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  46% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  46% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  47% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  47% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  47% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  47% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  48% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  48% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  48% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  48% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  49% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  49% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  49% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  49% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  50% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  50% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  50% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  50% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  50% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  51% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  51% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  51% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  51% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  52% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  52% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  52% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  52% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  53% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  53% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  53% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  53% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  53% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  54% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  54% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  54% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  54% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  55% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  55% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  55% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  55% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  56% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  56% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  56% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  56% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  57% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  57% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  57% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  57% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  57% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  58% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  58% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  58% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  58% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  59% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  59% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  59% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  59% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  60% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  60% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  60% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  60% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  60% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  61% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  61% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  61% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  61% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  62% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  62% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  62% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  62% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  63% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  63% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  63% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  63% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  64% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  64% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  64% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  64% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  64% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  65% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  65% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  65% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  65% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  66% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  66% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  66% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  66% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  67% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  67% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  67% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  67% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  67% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  68% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  68% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  68% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  68% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  69% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  69% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  69% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  69% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  70% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  70% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  70% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  70% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  71% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  71% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  71% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  71% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  71% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  72% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  72% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  72% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  72% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  73% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  73% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  73% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  73% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  74% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  74% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  74% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  74% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  75% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  75% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  75% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  75% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  75% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  76% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  76% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  76% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  76% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  77% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  77% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  77% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  77% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  78% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  78% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  78% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  78% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  78% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  79% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  79% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  79% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  79% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  80% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  80% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  80% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  80% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  81% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  81% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  81% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  81% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  82% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  82% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  82% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  82% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  82% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  83% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  83% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  83% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  83% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  84% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  84% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  84% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  84% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  85% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  85% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  85% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  85% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  85% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  86% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  86% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  86% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  86% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  87% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  87% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  87% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  87% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  88% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  88% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  88% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  88% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  89% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  89% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  89% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  89% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  89% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  90% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  90% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  90% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  90% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  91% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  91% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  91% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  91% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  92% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  92% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  92% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  92% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  92% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  93% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  93% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  93% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  93% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  94% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  94% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  94% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  94% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  95% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  95% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  95% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  95% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  96% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  96% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  96% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  96% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  96% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  97% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  97% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  97% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  97% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  98% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  98% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  98% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  98% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  99% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  99% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[  99% ] [90m[1mreimport[22m | Подготовка файлов к повторному импорту…[39m[0m
+[   0% ] [90m[1mreimport[22m | Выполнение предимпортных операций…[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Started Подготовка сцен к перезагрузке (1 steps)[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Анализ сцены [пусто][39m[0m
+[  50% ] [90m[1mpreload_reimporting_scene[22m | Подготовка завершена.[39m[0m
+[92m[ DONE ][39m [1mpreload_reimporting_scene[22m
+[0m
+[   0% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[   0% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   0% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   0% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   0% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   1% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   1% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[   1% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   1% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[   2% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   2% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   2% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   2% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   3% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[   3% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   3% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   3% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   3% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   4% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   4% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   4% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   4% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   5% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   5% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   5% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   5% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   6% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   6% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   6% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   6% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[   7% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   7% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[   7% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   7% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   7% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   8% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   8% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[   8% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   8% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   9% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   9% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   9% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[   9% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  10% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  10% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  10% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  10% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  10% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  11% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  11% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  11% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  11% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  12% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  12% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  12% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  12% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  13% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  13% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  13% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  13% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  14% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  14% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  14% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  14% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  14% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  15% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  15% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  15% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  15% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  16% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  16% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  16% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  16% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  17% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  17% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  17% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  17% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  17% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  18% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  18% ] [90m[1mreimport[22m | menu.png[39m[0m
+[  18% ] [90m[1mreimport[22m | third-person.png[39m[0m
+[  18% ] [90m[1mreimport[22m | top-view.png[39m[0m
+[  19% ] [90m[1mreimport[22m | workshop.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  19% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  19% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  19% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  20% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  20% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  20% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  20% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  21% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  21% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  21% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  21% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  21% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  22% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  22% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  22% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  22% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  23% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  23% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  23% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  23% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  24% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  24% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  24% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  24% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  25% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  25% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  25% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  25% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  25% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  26% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  26% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  26% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  26% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  27% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  27% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  27% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  27% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  28% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  28% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  28% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  28% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  28% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  29% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  29% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  29% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  29% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  30% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  30% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  30% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  30% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  31% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  31% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  31% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  31% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  32% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  32% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  32% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  32% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  32% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  33% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  33% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  33% ] [90m[1mreimport[22m | colormap.png[39m[0m
+ERROR: Condition "f.is_null()" is true. Continuing.
+   at: get_multiple_md5 (core/io/file_access.cpp:967)
+[  33% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  34% ] [90m[1mreimport[22m | colormap.png[39m[0m
+[  34% ] [90m[1mreimport[22m | bed-single.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  34% ] [90m[1mreimport[22m | bed-single-cover.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  34% ] [90m[1mreimport[22m | structure-corner-outer.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  35% ] [90m[1mreimport[22m | bed-double.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  35% ] [90m[1mreimport[22m | bed-double-cover.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  35% ] [90m[1mreimport[22m | balcony-rail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  35% ] [90m[1mreimport[22m | blaster-c.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  35% ] [90m[1mreimport[22m | balcony-rail-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  36% ] [90m[1mreimport[22m | balcony-rail-center.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  36% ] [90m[1mreimport[22m | clip-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  36% ] [90m[1mreimport[22m | balcony-floor.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  36% ] [90m[1mreimport[22m | blaster-b.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  37% ] [90m[1mreimport[22m | balcony-floor-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  37% ] [90m[1mreimport[22m | balcony-floor-center.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  37% ] [90m[1mreimport[22m | blaster-e.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  37% ] [90m[1mreimport[22m | blaster-a.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  38% ] [90m[1mreimport[22m | container-tall.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  38% ] [90m[1mreimport[22m | container-flat.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  38% ] [90m[1mreimport[22m | container-flat-open.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  38% ] [90m[1mreimport[22m | computer.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  39% ] [90m[1mreimport[22m | computer-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  39% ] [90m[1mreimport[22m | computer-system.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  39% ] [90m[1mreimport[22m | wall-window.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  39% ] [90m[1mreimport[22m | computer-screen.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  39% ] [90m[1mreimport[22m | chair.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  40% ] [90m[1mreimport[22m | chair-headrest.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  40% ] [90m[1mreimport[22m | clip-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  40% ] [90m[1mreimport[22m | wall.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  40% ] [90m[1mreimport[22m | chair-cushion.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  41% ] [90m[1mreimport[22m | chair-cushion-headrest.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  41% ] [90m[1mreimport[22m | chair-armrest.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  41% ] [90m[1mreimport[22m | blaster-d.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  41% ] [90m[1mreimport[22m | chair-armrest-headrest.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  42% ] [90m[1mreimport[22m | structure-yellow-high.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  42% ] [90m[1mreimport[22m | blaster-n.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  42% ] [90m[1mreimport[22m | structure-window.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  42% ] [90m[1mreimport[22m | blaster-o.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  42% ] [90m[1mreimport[22m | structure-window-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  43% ] [90m[1mreimport[22m | blaster-p.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  43% ] [90m[1mreimport[22m | structure-wall.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  43% ] [90m[1mreimport[22m | structure-doorway.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  43% ] [90m[1mreimport[22m | blaster-q.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  44% ] [90m[1mreimport[22m | structure-tall.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  44% ] [90m[1mreimport[22m | blaster-r.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  44% ] [90m[1mreimport[22m | structure-short.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  44% ] [90m[1mreimport[22m | bullet-foam-thick.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  45% ] [90m[1mreimport[22m | structure-medium.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  45% ] [90m[1mreimport[22m | bullet-foam-tip-thick.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  45% ] [90m[1mreimport[22m | structure-high.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  45% ] [90m[1mreimport[22m | bullet-foam-tip.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  46% ] [90m[1mreimport[22m | warning-traffic.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  46% ] [90m[1mreimport[22m | blaster-f.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  46% ] [90m[1mreimport[22m | warning-orange.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  46% ] [90m[1mreimport[22m | structure-doorway-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  46% ] [90m[1mreimport[22m | blaster-g.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  47% ] [90m[1mreimport[22m | top.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  47% ] [90m[1mreimport[22m | blaster-h.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  47% ] [90m[1mreimport[22m | top-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  47% ] [90m[1mreimport[22m | blaster-i.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  48% ] [90m[1mreimport[22m | bullet-foam.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  48% ] [90m[1mreimport[22m | top-large-checkerboard.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  48% ] [90m[1mreimport[22m | blaster-j.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  48% ] [90m[1mreimport[22m | structure-yellow-tall.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  49% ] [90m[1mreimport[22m | blaster-k.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  49% ] [90m[1mreimport[22m | structure-yellow-short.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  49% ] [90m[1mreimport[22m | blaster-l.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  49% ] [90m[1mreimport[22m | structure-yellow-medium.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  50% ] [90m[1mreimport[22m | blaster-m.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  50% ] [90m[1mreimport[22m | wall-door-center.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  50% ] [90m[1mreimport[22m | stairs.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  50% ] [90m[1mreimport[22m | stairs-small-edges.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  50% ] [90m[1mreimport[22m | stairs-small-edges-handrail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  51% ] [90m[1mreimport[22m | wall-door-edge-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  51% ] [90m[1mreimport[22m | stairs-small-edge.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  51% ] [90m[1mreimport[22m | stairs-small-edge-handrail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  51% ] [90m[1mreimport[22m | stairs-small-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  52% ] [90m[1mreimport[22m | wall-door-edge.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  52% ] [90m[1mreimport[22m | stairs-small-corner-inner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  52% ] [90m[1mreimport[22m | stairs-small-center.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  52% ] [90m[1mreimport[22m | stairs-ramp.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  53% ] [90m[1mreimport[22m | stairs-handrail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  53% ] [90m[1mreimport[22m | stairs-handrail-single.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  53% ] [90m[1mreimport[22m | stairs-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  53% ] [90m[1mreimport[22m | wall-door-wide-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  53% ] [90m[1mreimport[22m | stairs-corner-inner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  54% ] [90m[1mreimport[22m | skip.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  54% ] [90m[1mreimport[22m | wall-corner-round.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  54% ] [90m[1mreimport[22m | wall-corner-round-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  54% ] [90m[1mreimport[22m | wall-corner-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  55% ] [90m[1mreimport[22m | wall-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  55% ] [90m[1mreimport[22m | wall-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  55% ] [90m[1mreimport[22m | table.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  55% ] [90m[1mreimport[22m | table-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  56% ] [90m[1mreimport[22m | wall-detail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  56% ] [90m[1mreimport[22m | table-inset.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  56% ] [90m[1mreimport[22m | table-inset-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  56% ] [90m[1mreimport[22m | table-display.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  57% ] [90m[1mreimport[22m | wall-door-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  57% ] [90m[1mreimport[22m | table-display-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  57% ] [90m[1mreimport[22m | table-display-planet.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  57% ] [90m[1mreimport[22m | structure.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  57% ] [90m[1mreimport[22m | structure-panel.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  58% ] [90m[1mreimport[22m | structure-barrier.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  58% ] [90m[1mreimport[22m | structure-barrier-high.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  58% ] [90m[1mreimport[22m | floor-panel-end.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  58% ] [90m[1mreimport[22m | floor-panel-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  59% ] [90m[1mreimport[22m | wall-switch.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  59% ] [90m[1mreimport[22m | floor-detail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  59% ] [90m[1mreimport[22m | floor-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  59% ] [90m[1mreimport[22m | door-single.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  60% ] [90m[1mreimport[22m | door-single-half.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  60% ] [90m[1mreimport[22m | door-single-closed.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  60% ] [90m[1mreimport[22m | door-double.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  60% ] [90m[1mreimport[22m | wall-window-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  60% ] [90m[1mreimport[22m | door-double-half.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  61% ] [90m[1mreimport[22m | door-double-closed.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  61% ] [90m[1mreimport[22m | display-wall.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  61% ] [90m[1mreimport[22m | wall-window-frame.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  61% ] [90m[1mreimport[22m | display-wall-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  62% ] [90m[1mreimport[22m | container.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  62% ] [90m[1mreimport[22m | container-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  62% ] [90m[1mreimport[22m | wall-window-shutters.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  62% ] [90m[1mreimport[22m | skip-rocks.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  63% ] [90m[1mreimport[22m | wall-door-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  63% ] [90m[1mreimport[22m | rocks.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  63% ] [90m[1mreimport[22m | rail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  63% ] [90m[1mreimport[22m | rail-narrow.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  64% ] [90m[1mreimport[22m | wall-door.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  64% ] [90m[1mreimport[22m | pipe.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  64% ] [90m[1mreimport[22m | pipe-ring.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  64% ] [90m[1mreimport[22m | pipe-ring-colored.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  64% ] [90m[1mreimport[22m | pipe-end.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  65% ] [90m[1mreimport[22m | pipe-end-colored.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  65% ] [90m[1mreimport[22m | pipe-bend.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  65% ] [90m[1mreimport[22m | wall-pillar-banner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  65% ] [90m[1mreimport[22m | pipe-bend-diagonal.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  66% ] [90m[1mreimport[22m | floor.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  66% ] [90m[1mreimport[22m | floor-panel.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  66% ] [90m[1mreimport[22m | wall-pillar.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  66% ] [90m[1mreimport[22m | floor-panel-straight.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  67% ] [90m[1mreimport[22m | floor.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  67% ] [90m[1mreimport[22m | floor-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  67% ] [90m[1mreimport[22m | cog-b.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  67% ] [90m[1mreimport[22m | door.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  67% ] [90m[1mreimport[22m | door-wide-open.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  68% ] [90m[1mreimport[22m | cog-c.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  68% ] [90m[1mreimport[22m | door-wide-half.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  68% ] [90m[1mreimport[22m | door-wide-closed.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  68% ] [90m[1mreimport[22m | cog-d.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  69% ] [90m[1mreimport[22m | crane.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  69% ] [90m[1mreimport[22m | crane-magnet.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  69% ] [90m[1mreimport[22m | cog-e.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  69% ] [90m[1mreimport[22m | crane-lift.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  70% ] [90m[1mreimport[22m | conveyor.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  70% ] [90m[1mreimport[22m | cone.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  70% ] [90m[1mreimport[22m | conveyor-stripe.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  70% ] [90m[1mreimport[22m | conveyor-stripe-sides.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  71% ] [90m[1mreimport[22m | machine-connection-hole.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  71% ] [90m[1mreimport[22m | machine-bed.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  71% ] [90m[1mreimport[22m | catwalk-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  71% ] [90m[1mreimport[22m | lever-single.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  71% ] [90m[1mreimport[22m | lever-double.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  72% ] [90m[1mreimport[22m | catwalk-junction.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  72% ] [90m[1mreimport[22m | indicator-special-lines.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  72% ] [90m[1mreimport[22m | indicator-special-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  72% ] [90m[1mreimport[22m | catwalk-stairs-loop.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  73% ] [90m[1mreimport[22m | indicator-special-arrow.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  73% ] [90m[1mreimport[22m | indicator-special-area.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  73% ] [90m[1mreimport[22m | catwalk-stairs.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  73% ] [90m[1mreimport[22m | hopper-square.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  74% ] [90m[1mreimport[22m | hopper-round.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  74% ] [90m[1mreimport[22m | catwalk-straight.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  74% ] [90m[1mreimport[22m | hopper-high-square.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  74% ] [90m[1mreimport[22m | hopper-high-round.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  75% ] [90m[1mreimport[22m | cog-a.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  75% ] [90m[1mreimport[22m | conveyor-bars-stripe-fence.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  75% ] [90m[1mreimport[22m | conveyor-long-stripe-sides.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  75% ] [90m[1mreimport[22m | conveyor-long-stripe-sides-part-middle.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  75% ] [90m[1mreimport[22m | conveyor-bars-stripe-high-slope.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  76% ] [90m[1mreimport[22m | conveyor-long-stripe-sides-part-end.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  76% ] [90m[1mreimport[22m | conveyor-long-sides.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  76% ] [90m[1mreimport[22m | conveyor-bars-stripe-high.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  76% ] [90m[1mreimport[22m | conveyor-long-sides-part-middle.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  77% ] [90m[1mreimport[22m | conveyor-long-sides-part-end.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  77% ] [90m[1mreimport[22m | conveyor-bars-stripe-side.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  77% ] [90m[1mreimport[22m | conveyor-long-part-middle.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  77% ] [90m[1mreimport[22m | conveyor-long-part-end.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  78% ] [90m[1mreimport[22m | conveyor-bars-stripe.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  78% ] [90m[1mreimport[22m | conveyor-junction-t.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  78% ] [90m[1mreimport[22m | conveyor-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  78% ] [90m[1mreimport[22m | conveyor-bars.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  78% ] [90m[1mreimport[22m | conveyor-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  79% ] [90m[1mreimport[22m | conveyor-bars-fence-slope.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  79% ] [90m[1mreimport[22m | conveyor-stripe-sides-junction-t.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  79% ] [90m[1mreimport[22m | conveyor-stripe-sides-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  79% ] [90m[1mreimport[22m | conveyor-bars-fence.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  80% ] [90m[1mreimport[22m | conveyor-stripe-part-middle.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  80% ] [90m[1mreimport[22m | conveyor-stripe-part-end.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  80% ] [90m[1mreimport[22m | conveyor-bars-high-slope.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  80% ] [90m[1mreimport[22m | conveyor-stripe-junction-t.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  81% ] [90m[1mreimport[22m | conveyor-stripe-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  81% ] [90m[1mreimport[22m | conveyor-bars-high.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  81% ] [90m[1mreimport[22m | conveyor-stripe-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  81% ] [90m[1mreimport[22m | conveyor-sides.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  82% ] [90m[1mreimport[22m | conveyor-bars-sides.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  82% ] [90m[1mreimport[22m | conveyor-sides-junction-t.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  82% ] [90m[1mreimport[22m | conveyor-sides-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  82% ] [90m[1mreimport[22m | conveyor-bars-stripe-fence-slope.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  82% ] [90m[1mreimport[22m | conveyor-long.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  83% ] [90m[1mreimport[22m | conveyor-long-stripe.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  83% ] [90m[1mreimport[22m | scanner-low.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  83% ] [90m[1mreimport[22m | silencer-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  83% ] [90m[1mreimport[22m | scanner-high.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  84% ] [90m[1mreimport[22m | smoke.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  84% ] [90m[1mreimport[22m | robot-arm-b.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  84% ] [90m[1mreimport[22m | target-detail.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  84% ] [90m[1mreimport[22m | robot-arm-a.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  85% ] [90m[1mreimport[22m | target-fragment-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  85% ] [90m[1mreimport[22m | piston-thin-square.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  85% ] [90m[1mreimport[22m | target-fragment-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  85% ] [90m[1mreimport[22m | piston-thin-round.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  85% ] [90m[1mreimport[22m | target-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  86% ] [90m[1mreimport[22m | piston-square.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  86% ] [90m[1mreimport[22m | target-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  86% ] [90m[1mreimport[22m | piston-round.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  86% ] [90m[1mreimport[22m | arrow-basic-rounded.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  87% ] [90m[1mreimport[22m | pipe-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  87% ] [90m[1mreimport[22m | structure-corner-inner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  87% ] [90m[1mreimport[22m | crate-medium.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  87% ] [90m[1mreimport[22m | screen-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  88% ] [90m[1mreimport[22m | crate-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  88% ] [90m[1mreimport[22m | screen-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  88% ] [90m[1mreimport[22m | crate-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  88% ] [90m[1mreimport[22m | screen-panel-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  89% ] [90m[1mreimport[22m | grenade-a.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  89% ] [90m[1mreimport[22m | screen-panel-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  89% ] [90m[1mreimport[22m | grenade-b.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  89% ] [90m[1mreimport[22m | screen-panel-flat.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  89% ] [90m[1mreimport[22m | scope-large-a.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  90% ] [90m[1mreimport[22m | screen-hanging-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  90% ] [90m[1mreimport[22m | scope-large-b.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  90% ] [90m[1mreimport[22m | screen-hanging-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  90% ] [90m[1mreimport[22m | scope-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  91% ] [90m[1mreimport[22m | screen-flat.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  91% ] [90m[1mreimport[22m | silencer-larger.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  91% ] [90m[1mreimport[22m | pipe-glass-large-junction.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  91% ] [90m[1mreimport[22m | box-wide.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  92% ] [90m[1mreimport[22m | pipe-glass-large-curve.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  92% ] [90m[1mreimport[22m | pipe-glass-large-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  92% ] [90m[1mreimport[22m | button-floor-round-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  92% ] [90m[1mreimport[22m | pipe-glass-large-bump.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  92% ] [90m[1mreimport[22m | pipe-glass-large-bend.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  93% ] [90m[1mreimport[22m | button-floor-round.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  93% ] [90m[1mreimport[22m | oopi.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  93% ] [90m[1mreimport[22m | machine.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  93% ] [90m[1mreimport[22m | button-floor-square-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  94% ] [90m[1mreimport[22m | machine-window.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  94% ] [90m[1mreimport[22m | machine-window-bar.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  94% ] [90m[1mreimport[22m | button-floor-square.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  94% ] [90m[1mreimport[22m | machine-fortified.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  95% ] [90m[1mreimport[22m | machine-connection-pipe.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  95% ] [90m[1mreimport[22m | catwalk-corner.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  95% ] [90m[1mreimport[22m | pipe-large-valve.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  95% ] [90m[1mreimport[22m | arrow-basic.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | pipe-large-side.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | pipe-large-long.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | arrow-rounded.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | pipe-large-junction.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | pipe-large-curve.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | arrow.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | pipe-large-cross.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | pipe-large-bump.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | box-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  98% ] [90m[1mreimport[22m | pipe-large-bend.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  98% ] [90m[1mreimport[22m | pipe-glass-large.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  98% ] [90m[1mreimport[22m | box-long.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  98% ] [90m[1mreimport[22m | pipe-glass-large-valve.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  99% ] [90m[1mreimport[22m | pipe-glass-large-side.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  99% ] [90m[1mreimport[22m | box-small.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  99% ] [90m[1mreimport[22m | pipe-glass-large-long.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Импортировать сцену (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Импорт сцены…[39m[0m
+[   1% ] [90m[1mimport[22m | Запуск пользовательского скрипта…[39m[0m
+[  99% ] [90m[1mimport[22m | Сохранение…[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  99% ] [90m[1mreimport[22m | Завершение импорта активов…[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started Импорт или повторный импорт ассетов (427 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Выполнение операций после реимпорта…[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Загрузка редактора (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Загрузка макета редактора…[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Загрузка док-панели…[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

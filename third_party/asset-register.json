@@ -1,0 +1,107 @@
+[
+  {
+    "id": "space-station-kit",
+    "author": "Kenney",
+    "source": "https://kenney.nl/assets/space-station-kit",
+    "download": "https://kenney.nl/media/pages/assets/space-station-kit/6475288f2e-1712749919/kenney_space-station-kit.zip",
+    "license": "CC0-1.0",
+    "sha256": "215e79bd5415cff93665183390f0343ed9acf87780306331013b78520170c6d8",
+    "original_archive": "D:\\GameDev\\asset-downloads\\kenney_space-station-kit.zip",
+    "modifications": "Selected meshes/materials and sounds adapted for industrial palette and gameplay; originals retained outside runtime."
+  },
+  {
+    "id": "blaster-kit",
+    "author": "Kenney",
+    "source": "https://kenney.nl/assets/blaster-kit",
+    "download": "https://kenney.nl/media/pages/assets/blaster-kit/261d80a716-1753959510/kenney_blaster-kit_2.1.zip",
+    "license": "CC0-1.0",
+    "sha256": "91e3093e95427d59625e7e2ce2d0399b861600160fd0b4ada7714796b67cea8c",
+    "original_archive": "D:\\GameDev\\asset-downloads\\kenney_blaster-kit_2.1.zip",
+    "modifications": "Selected meshes/materials and sounds adapted for industrial palette and gameplay; originals retained outside runtime."
+  },
+  {
+    "id": "sci-fi-sounds",
+    "author": "Kenney",
+    "source": "https://kenney.nl/assets/sci-fi-sounds",
+    "download": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+    "license": "CC0-1.0",
+    "sha256": "119340f351a5098ad814f78719438c0da355a9ce8a4c8a3af6a8d48aa3d49e04",
+    "original_archive": "D:\\GameDev\\asset-downloads\\kenney_sci-fi-sounds.zip",
+    "modifications": "Selected meshes/materials and sounds adapted for industrial palette and gameplay; originals retained outside runtime."
+  },
+  {
+    "id": "interface-sounds",
+    "author": "Kenney",
+    "source": "https://kenney.nl/assets/interface-sounds",
+    "download": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+    "license": "CC0-1.0",
+    "sha256": "f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232",
+    "original_archive": "D:\\GameDev\\asset-downloads\\kenney_interface-sounds.zip",
+    "modifications": "Selected meshes/materials and sounds adapted for industrial palette and gameplay; originals retained outside runtime."
+  },
+  {
+    "id": "ui-pack-sci-fi",
+    "author": "Kenney",
+    "source": "https://kenney.nl/assets/ui-pack-sci-fi",
+    "download": "https://kenney.nl/media/pages/assets/ui-pack-sci-fi/b67c2acd31-1724181109/kenney_ui-pack-space-expansion.zip",
+    "license": "CC0-1.0",
+    "sha256": "4ae5a4949b71ba6c08bfb4d4708b3880915782f7deae7bc5872e1d56f0a668af",
+    "original_archive": "D:\\GameDev\\asset-downloads\\kenney_ui-pack-space-expansion.zip",
+    "modifications": "Selected meshes/materials and sounds adapted for industrial palette and gameplay; originals retained outside runtime."
+  },
+  {
+    "id": "godot-kinematic-character-reference",
+    "author": "Godot Engine contributors",
+    "source": "https://raw.githubusercontent.com/godotengine/godot-demo-projects/master/3d/kinematic_character/player/cubio.gd",
+    "license": "MIT",
+    "modifications": "Camera-relative movement, gravity and move_and_slide approach adapted; full original retained as text."
+  },
+  {
+    "id": "material-and-animation-research",
+    "author": "Source evaluation record",
+    "source": "https://quaternius.com/packs/universalanimationlibrary.html",
+    "license": "Reference search only; no downloaded animation incorporated",
+    "modifications": "Quaternius animation download not incorporated; rigid-joint mechanical animation authored. ambientCG official downloads succeeded with standard browser request headers; real PBR textures are incorporated."
+  },
+  {
+    "id": "factory-kit",
+    "author": "Kenney",
+    "source": "https://kenney.nl/assets/factory-kit",
+    "download": "https://kenney.nl/media/pages/assets/factory-kit/edaac9d4f6-1777639602/kenney_factory-kit_3.0.zip",
+    "license": "CC0-1.0",
+    "sha256": "7e31fb2308e90304672bd15cd18fa9d9f02c03731a8cbc57a8e3e1c181dfb0a7",
+    "original_archive": "D:\\GameDev\\asset-downloads\\kenney_factory-kit_3.0.zip",
+    "modifications": "Selected meshes/materials and sounds adapted for industrial palette and gameplay; originals retained outside runtime."
+  },
+  {
+    "id": "Metal040",
+    "source": "https://ambientcg.com/a/Metal040",
+    "author": "Lennart Demes / ambientCG",
+    "license": "CC0-1.0",
+    "sha256": "40b04ad7e95144d19f7e63a780a4b4e5ffc587885560d7a6c8bb961dd3458b58",
+    "modifications": "1K PBR maps, scaled UVs and industrial color grading."
+  },
+  {
+    "id": "Concrete034",
+    "source": "https://ambientcg.com/a/Concrete034",
+    "author": "Lennart Demes / ambientCG",
+    "license": "CC0-1.0",
+    "sha256": "5839d284d94ffb8d2a56df742ec522b13dd311c52dbd42b8fd33f0409ceedb81",
+    "modifications": "1K PBR maps, scaled UVs and industrial color grading."
+  },
+  {
+    "id": "kenney-smoke-05",
+    "author": "Kenney",
+    "license": "CC0-1.0",
+    "source": "https://raw.githubusercontent.com/godotengine/godot-demo-projects/master/3d/particles/kenney/smoke_05.png",
+    "modifications": "Smoke particle texture reused with CPU-compatible particle rendering."
+  },
+  {
+    "id": "lost-in-a-bad-place",
+    "author": "congusbongus",
+    "license": "CC0-1.0",
+    "source": "https://opengameart.org/content/lost-in-a-bad-place-horror-ambience-loop",
+    "sha256": "ad9a9f39240ef5862d3a6dc5220893926c6873aa0e08a641dadf3f1c0acc2cd4",
+    "modifications": "Renamed only; quiet looping music layer."
+  }
+]

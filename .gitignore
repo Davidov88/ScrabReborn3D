@@ -1,0 +1,6 @@
+.godot/
+.userdata/
+build/
+art_source/*.blend1
+tools/__pycache__/
+test-results/
